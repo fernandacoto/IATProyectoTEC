@@ -24,8 +24,47 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
         {
             if (!IsPostBack)
             {
-                Session["Nombre_Usuario"] = "ina";
+                //Session["Nombre_Usuario"] = "ina";
                 cargar_datos_usuario();
+            }
+        }
+
+        private void cargarDireccion(Int16 IdDistrito)
+        {
+            cIATDistritoNegocios Distrito = new cIATDistritoNegocios(1, "A", 2, "B");
+
+            Distrito.Id_Distrito = IdDistrito;
+            DataTable TablaDistrito = Distrito.Buscar();
+
+            Int16 IdCanton = 0;
+
+            if (TablaDistrito.Rows.Count > 0)
+            {
+                lblContenidoDistrito.Text = TablaDistrito.Rows[0]["Nom_Distrito"].ToString();
+                IdCanton = Int16.Parse(TablaDistrito.Rows[0]["FK_IdCanton"].ToString());
+            }
+
+            cIATCantonNegocios Canton = new cIATCantonNegocios(1, "A", 2, "B");
+
+            Canton.Id_Canton = IdCanton;
+            DataTable TablaCanton = Canton.Buscar();
+
+            Int16 IdProvincia = 0;
+
+            if (TablaCanton.Rows.Count > 0)
+            {
+                lblContenidoCant.Text = TablaCanton.Rows[0]["Nom_Canton"].ToString();
+                IdProvincia = Int16.Parse(TablaCanton.Rows[0]["FK_IdProvincia"].ToString());
+            }
+
+            cIATProvinciaNegocios Provincia = new cIATProvinciaNegocios(1, "A", 2, "B");
+
+            Provincia.Id_Provincia = IdProvincia;
+            DataTable TablaProvincia = Provincia.Buscar();
+
+            if (TablaProvincia.Rows.Count > 0)
+            {
+                lblContenidoProvincia.Text = TablaProvincia.Rows[0]["Nom_Provincia"].ToString();
             }
         }
 
@@ -46,6 +85,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
                 lblContenidoNombreEmpresa.Text = tablaEmpresa.Rows[0]["Nom_Empresa"].ToString();
                 lblContenidoCedulaJuridica.Text = tablaEmpresa.Rows[0]["Num_CedulaJuridica"].ToString();
                 lblContenidoDescripcion.Text = tablaEmpresa.Rows[0]["Dsc_Empresa"].ToString();
+                lblContenidoDistrito.Text = tablaEmpresa.Rows[0]["Fk_IdDistrito"].ToString();
             }
             Telefono.FK_IdUsuario = IdUsuario;
             Telefono.FK_IdTipoContacto = 1;
@@ -61,6 +101,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             {
                 lblContenidoEmail.Text = tablaEmail.Rows[0]["Detalle"].ToString();
             }
+            cargarDireccion(Int16.Parse(lblContenidoDistrito.Text));
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
@@ -78,11 +119,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             }
             Usuario.Estado = 3;
             Usuario.Actualizar();
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+
         }
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-           
+            Response.Redirect("./frmEditarPerfilEmpresa.aspx");
         }
     }
 }

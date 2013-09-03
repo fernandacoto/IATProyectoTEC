@@ -127,7 +127,7 @@
                                 <asp:Label ID="lblNombreEmpresa" runat="server" Text="Nombre"></asp:Label>
                             </td>
                             <td class="style23">
-                                <asp:Label ID="lblContenidoNombreEmpresa" runat="server" Text="Label"></asp:Label>
+                                <asp:Label ID="lblContenidoNombreEmpresa" runat="server"></asp:Label>
                             </td>
                             <td class="style24">
                             </td>
@@ -141,7 +141,7 @@
                                 <asp:Label ID="lblCedulaJuridica" runat="server" Text="Cédula Jurídica"></asp:Label>
                             </td>
                             <td class="style23">
-                                <asp:Label ID="lblContenidoCedulaJuridica" runat="server" Text="Label"></asp:Label>
+                                <asp:Label ID="lblContenidoCedulaJuridica" runat="server"></asp:Label>
                             </td>
                             <td class="style24">
                             </td>
@@ -155,7 +155,7 @@
                                 <asp:Label ID="lblDescripcion" runat="server" Text="Descripción"></asp:Label>
                             </td>
                             <td class="style23">
-                                <asp:Label ID="lblContenidoDescripcion" runat="server" Text="Label"></asp:Label>
+                                <asp:Label ID="lblContenidoDescripcion" runat="server"></asp:Label>
                             </td>
                             <td class="style24">
                             </td>
@@ -169,7 +169,7 @@
                                 <asp:Label ID="lblTelefono" runat="server" Text="Teléfono"></asp:Label>
                             </td>
                             <td class="style23">
-                                <asp:Label ID="lblContenidoTelefono" runat="server" Text="Label"></asp:Label>
+                                <asp:Label ID="lblContenidoTelefono" runat="server"></asp:Label>
                             </td>
                             <td class="style24">
                             </td>
@@ -183,7 +183,7 @@
                                 <asp:Label ID="lblEmail" runat="server" Text="Correo electrónico"></asp:Label>
                             </td>
                             <td class="style23">
-                                <asp:Label ID="lblContenidoEmail" runat="server" Text="Label"></asp:Label>
+                                <asp:Label ID="lblContenidoEmail" runat="server"></asp:Label>
                             </td>
                             <td class="style24">
                             </td>
@@ -197,7 +197,7 @@
                                 <asp:Label ID="lblProvincia" runat="server" Text="Provincia"></asp:Label>
                             </td>
                             <td class="style23">
-                                <asp:Label ID="lblContenidoProvincia" runat="server" Text="Label"></asp:Label>
+                                <asp:Label ID="lblContenidoProvincia" runat="server"></asp:Label>
                             </td>
                             <td class="style24">
                             </td>
@@ -212,7 +212,7 @@
                                 <asp:Label ID="lblContenidoCanton" runat="server" Text="Cantón"></asp:Label>
                             </td>
                             <td class="style23">
-                                <asp:Label ID="lblContenidoCant" runat="server" Text="Label"></asp:Label>
+                                <asp:Label ID="lblContenidoCant" runat="server"></asp:Label>
                             </td>
                             <td class="style24">
                             </td>
@@ -226,7 +226,7 @@
                                 <asp:Label ID="lblDistrito" runat="server" Text="Distrito"></asp:Label>
                             </td>
                             <td class="style23">
-                                <asp:Label ID="lblContenidoDistrito" runat="server" Text="Label"></asp:Label>
+                                <asp:Label ID="lblContenidoDistrito" runat="server"></asp:Label>
                             </td>
                             <td class="style24">
                             </td>

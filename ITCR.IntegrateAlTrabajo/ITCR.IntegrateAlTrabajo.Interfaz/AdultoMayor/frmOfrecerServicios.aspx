@@ -131,29 +131,6 @@
                         <table class="style14">
                             <tr>
                                 <td class="style24">
-                                    Paso 1 de 1</td>
-                                <td class="style25">
-                                    &nbsp;</td>
-                                <td class="style17">
-                                </td>
-                                <td class="style20">
-                                </td>
-                                <td class="style11">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="style24" colspan="2">
-                                    <asp:Label ID="lblServicios" runat="server" Text="Servicios"></asp:Label>
-                                </td>
-                                <td class="style17">
-                                    &nbsp;</td>
-                                <td class="style20">
-                                    &nbsp;</td>
-                                <td class="style11">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="style24">
                                     &nbsp;</td>
                                 <td class="style25">
                                     &nbsp;</td>

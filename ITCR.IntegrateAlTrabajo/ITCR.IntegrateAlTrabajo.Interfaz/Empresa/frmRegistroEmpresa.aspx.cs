@@ -88,6 +88,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             if (Page.IsValid)
             {
                 Empresa.Nom_Empresa = txtNombreEmpresa.Text;
+                DataTable TablaNomEmpresa = Empresa.Buscar();
                 Empresa.Num_CedulaJuridica = txtCedulaJuridica.Text;
                 Empresa.Dsc_Empresa = txtDescripcion.Text;
                 CorreoElectronico.Detalle = txtEmail.Text;
@@ -96,8 +97,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
                 Telefono.FK_IdTipoContacto = 1;
                 Empresa.FK_IdDistrito = Int16.Parse(drpDistrito.SelectedValue);
                 Empresa.PuntajePromedio = 0.00;
-                DataTable TablaNomEmpresa = Empresa.Buscar();
-                if (TablaNomEmpresa.Rows.Count.Equals(0))
+                if (TablaNomEmpresa.Rows.Count == 0)
                 {
                     mvRegistroEmpresa.ActiveViewIndex = 1;
                 }
@@ -168,6 +168,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             CorreoElectronico.Insertar();
             Telefono.FK_IdUsuario = IdUsuario;
             Telefono.Insertar();
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
             
 
         }
@@ -182,6 +183,21 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             {
                 btnFinalizar.Enabled = false;
             }
+        }
+
+        protected void btnCancelarPaso1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+        }
+
+        protected void btnCancelarPaso2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+        }
+
+        protected void btnCancelarPaso3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
         }
     }
 }

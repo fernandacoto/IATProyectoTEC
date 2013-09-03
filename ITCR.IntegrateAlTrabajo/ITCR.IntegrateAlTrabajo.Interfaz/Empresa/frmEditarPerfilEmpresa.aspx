@@ -269,7 +269,8 @@
                                             <td class="style16">
                                                 &nbsp;</td>
                                             <td class="style5">
-                                                &nbsp;<asp:Button ID="btnCancelarPaso1" runat="server" Text="Cancelar" />
+                                                &nbsp;<asp:Button ID="btnCancelarPaso1" runat="server" Text="Cancelar" 
+                                                    onclick="btnCancelarPaso1_Click" />
                                                 &nbsp;&nbsp;
                                                 <asp:Button ID="btnSiguiente" runat="server" onclick="btnSiguiente_Click" 
                                                     Text="Siguiente" />
@@ -384,7 +385,8 @@
                                             <td class="style20">
                                                 &nbsp;</td>
                                             <td class="style5">
-                                                <asp:Button ID="btnCancelarPaso2" runat="server" Text="Cancelar" />
+                                                <asp:Button ID="btnCancelarPaso2" runat="server" Text="Cancelar" 
+                                                    onclick="btnCancelarPaso2_Click" />
                                                 &nbsp;
                                                 <asp:Button ID="btnFinalizarE" runat="server" Text="Finalizar" 
                                                     onclick="btnFinalizarE_Click" />
