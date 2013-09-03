@@ -55,7 +55,8 @@
                         </asp:MenuItem>
                         <asp:MenuItem Text="Opinar" Value="Opinar"></asp:MenuItem>
                         <asp:MenuItem Text="Acerca de" Value="Acerca de"></asp:MenuItem>
-                        <asp:MenuItem Text="Cerrar sesión" Value="Cerrar sesión"></asp:MenuItem>
+                        <asp:MenuItem Text="Cerrar sesión" Value="Cerrar sesión" 
+                            NavigateUrl="~/Autenticacion/frmAutenticacion.aspx"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>

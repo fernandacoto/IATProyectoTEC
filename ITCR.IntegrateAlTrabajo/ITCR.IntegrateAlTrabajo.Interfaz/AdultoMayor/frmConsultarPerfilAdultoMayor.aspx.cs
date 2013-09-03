@@ -16,7 +16,6 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         {
             if (!IsPostBack)
             {
-                Session["Nombre_Usuario"] = "jsanchez";
                 cargarDatosPersonales();
                 cargarDataGridEstudios();
                 cargarDataGridExperienciasLaborales();

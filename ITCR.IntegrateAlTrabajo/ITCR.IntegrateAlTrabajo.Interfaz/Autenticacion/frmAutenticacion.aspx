@@ -4,6 +4,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    
+   <script id="clientEventHandlersJS" language="javascript" type="text/javascript">
+
+           function datosInvalidos() {
+               if (confirm("Los datos de autenticación son inválidos.", "Autenticación") == true)
+                   return true;
+               else
+                   return false;
+           }
+    </script>
+    
     <title></title>
     <style type="text/css">
         .style1
@@ -124,7 +135,8 @@
                             <td>
                                 &nbsp;</td>
                             <td>
-                                <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar" />
+                                <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar" 
+                                    onclick="btnIniciarSesion_Click" />
                             </td>
                         </tr>
                         <tr>
