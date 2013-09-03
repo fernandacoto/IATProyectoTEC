@@ -105,7 +105,7 @@
                 &nbsp;</td>
             <td class="style6" colspan="2">
                 <asp:Label ID="lblAgregarServicio" runat="server" 
-                    Text="Agregar Servicios"></asp:Label>
+                    Text="Agregar Servicios" CssClass="Titulo1"></asp:Label>
             </td>
             <td class="style8">
                 &nbsp;</td>

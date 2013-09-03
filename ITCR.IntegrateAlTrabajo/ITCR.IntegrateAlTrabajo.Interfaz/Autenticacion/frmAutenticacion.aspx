@@ -5,17 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     
-   <script id="clientEventHandlersJS" language="javascript" type="text/javascript">
-
-           function datosInvalidos() {
-               if (confirm("Los datos de autenticación son inválidos.", "Autenticación") == true)
-                   return true;
-               else
-                   return false;
-           }
-    </script>
-    
     <title></title>
+
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+
     <style type="text/css">
         .style1
         {
@@ -90,13 +83,13 @@
                         <tr>
                             <td class="style11">
                                 <asp:Label ID="lblAcercaBolsaTrabajo" runat="server" ForeColor="White" 
-                                    Text="Acerca de la bolsa de trabajo"></asp:Label>
+                                    Text="Acerca de la bolsa de trabajo" Font-Bold="True" Font-Size="18pt"></asp:Label>
                             </td>
                             <td class="style13">
                                 &nbsp;</td>
                             <td colspan="2">
                                 <asp:Label ID="lblIniciarSesion" runat="server" ForeColor="White" 
-                                    Text="Iniciar sesión"></asp:Label>
+                                    Text="Iniciar sesión" Font-Bold="True" Font-Size="18pt"></asp:Label>
                             </td>
                         </tr>
                         <tr>
@@ -109,7 +102,7 @@
                         </tr>
                         <tr>
                             <td class="style11" rowspan="5">
-                                <asp:Label ID="lblTextoAcerca" runat="server" ForeColor="White" 
+                                <asp:Label ID="lblTextoAcerca" runat="server" ForeColor="White" style="text-align:justify"
                                     Text="El proyecto a desarrollar es parte de la iniciativa “Empoderar y Emprender: las Personas Adultas Mayores Protagonistas y Agentes de Cambio”, el cual está centrado en hacer que los adultos mayores tengan un envejecimiento activo.  Este proyecto como un todo, comprende talleres y capacitaciones para los adultos mayores en los cuales se tratan diversos temas, con el fin de incidir efectivamente en un cambio en el estilo de vida de la persona adulta mayor, para que ésta alcance una mejor calidad de vida y se integre en su entorno personal, familiar y social."></asp:Label>
                             </td>
                             <td class="style13" rowspan="5">
@@ -136,7 +129,7 @@
                                 &nbsp;</td>
                             <td>
                                 <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar" 
-                                    onclick="btnIniciarSesion_Click" />
+                                    onclick="btnIniciarSesion_Click" CssClass="Boton" />
                             </td>
                         </tr>
                         <tr>

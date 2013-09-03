@@ -118,7 +118,7 @@
                 &nbsp;</td>
             <td class="style11" colspan="2">
                 <asp:Label ID="lblRegistroAdultoMayor" runat="server" 
-                    Text="Registro de Adulto Mayor"></asp:Label>
+                    Text="Registro de Adulto Mayor" CssClass="Titulo1"></asp:Label>
             </td>
             <td class="style13">
                 &nbsp;</td>
@@ -158,7 +158,7 @@
                         <table class="style14">
                             <tr>
                                 <td class="style24">
-                                    <asp:Label ID="lblPaso1" runat="server" Text="Paso 1 de 6"></asp:Label>
+                                    <asp:Label ID="lblPaso1" runat="server" Text="Paso 1 de 6" CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style25">
                                     &nbsp;</td>
@@ -171,7 +171,8 @@
                             </tr>
                             <tr>
                                 <td class="style24" colspan="2">
-                                    <asp:Label ID="lblDatosPersonales" runat="server" Text="Datos personales"></asp:Label>
+                                    <asp:Label ID="lblDatosPersonales" runat="server" Text="Datos personales" 
+                                        CssClass="Titulo3"></asp:Label>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -391,10 +392,10 @@
                                     &nbsp;</td>
                                 <td class="style11">
                                     <asp:Button ID="btnCancelar1" runat="server" Text="Cancelar" 
-                                        onclick="btnCancelar1_Click" />
+                                        onclick="btnCancelar1_Click" CssClass="Boton" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnSiguiente1" runat="server" onclick="btnSiguiente1_Click" 
-                                        Text="Siguiente" />
+                                        Text="Siguiente" CssClass="Boton" />
                                 </td>
                             </tr>
                         </table>
@@ -404,7 +405,7 @@
                         <table class="style14">
                             <tr>
                                 <td class="style24">
-                                    <asp:Label ID="lblPaso2" runat="server" Text="Paso 2 de 6"></asp:Label>
+                                    <asp:Label ID="lblPaso2" runat="server" Text="Paso 2 de 6" CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style25">
                                     &nbsp;</td>
@@ -418,7 +419,7 @@
                             <tr>
                                 <td class="style24" colspan="2">
                                     <asp:Label ID="lblDatosAutenticacion" runat="server" 
-                                        Text="Datos de autenticación"></asp:Label>
+                                        Text="Datos de autenticación" CssClass="Titulo3"></asp:Label>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -503,10 +504,10 @@
                                 <td class="style20">
                                     &nbsp;</td>
                                 <td class="style11">
-                                    <asp:Button ID="btnCancelar2" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelar2" runat="server" Text="Cancelar" CssClass="Boton" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnSiguiente2" runat="server" Text="Siguiente" 
-                                        onclick="btnSiguiente2_Click" />
+                                        onclick="btnSiguiente2_Click" CssClass="Boton" />
                                 </td>
                             </tr>
                         </table>
@@ -516,7 +517,7 @@
                         <table class="style14">
                             <tr>
                                 <td class="style24">
-                                    <asp:Label ID="lblPaso3" runat="server" Text="Paso 3 de 6"></asp:Label>
+                                    <asp:Label ID="lblPaso3" runat="server" Text="Paso 3 de 6" CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style25">
                                     &nbsp;</td>
@@ -529,7 +530,7 @@
                             </tr>
                             <tr>
                                 <td class="style24" colspan="2">
-                                    <asp:Label ID="lblEstudios" runat="server" Text="Estudios"></asp:Label>
+                                    <asp:Label ID="lblEstudios" runat="server" Text="Estudios" CssClass="Titulo3"></asp:Label>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -612,7 +613,7 @@
                                                     &nbsp;</td>
                                                 <td class="style11">
                                                     <asp:Button ID="btnAgregarEstudio" runat="server" Text="Agregar" 
-                                                        onclick="btnAgregarEstudio_Click" />
+                                                        onclick="btnAgregarEstudio_Click" CssClass="Boton" />
                                                 </td>
                                             </tr>
                                         </table>
@@ -663,12 +664,12 @@
                                     &nbsp;</td>
                                 <td class="style11">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras1" runat="server" Text="Atrás" />
+                                    <asp:Button ID="btnAtras1" runat="server" Text="Atrás" CssClass="Boton" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar3" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelar3" runat="server" Text="Cancelar" CssClass="Boton" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnSiguiente3" runat="server" onclick="btnSiguiente3_Click" 
-                                        Text="Siguiente" />
+                                        Text="Siguiente" CssClass="Boton" />
                                 </td>
                             </tr>
                         </table>
@@ -678,7 +679,7 @@
                         <table class="style14">
                             <tr>
                                 <td class="style24">
-                                    <asp:Label ID="lblPaso4" runat="server" Text="Paso 4 de 6"></asp:Label>
+                                    <asp:Label ID="lblPaso4" runat="server" Text="Paso 4 de 6" CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style25">
                                     &nbsp;</td>
@@ -692,7 +693,7 @@
                             <tr>
                                 <td class="style24" colspan="2">
                                     <asp:Label ID="lblExperienciasLaborales" runat="server" 
-                                        Text="Experiencias laborales"></asp:Label>
+                                        Text="Experiencias laborales" CssClass="Titulo3"></asp:Label>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -775,7 +776,7 @@
                                                     &nbsp;</td>
                                                 <td class="style11">
                                                     <asp:Button ID="btnAgregarExperienciaLaboral" runat="server" Text="Agregar" 
-                                                        onclick="btnAgregarExperienciaLaboral_Click" />
+                                                        onclick="btnAgregarExperienciaLaboral_Click" CssClass="Boton" />
                                                 </td>
                                             </tr>
                                         </table>
@@ -827,12 +828,12 @@
                                     &nbsp;</td>
                                 <td class="style11">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras2" runat="server" Text="Atrás" />
+                                    <asp:Button ID="btnAtras2" runat="server" Text="Atrás" CssClass="Boton" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar4" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelar4" runat="server" Text="Cancelar" CssClass="Boton" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnSiguiente4" runat="server" onclick="btnSiguiente4_Click" 
-                                        Text="Siguiente" />
+                                        Text="Siguiente" CssClass="Boton" />
                                 </td>
                             </tr>
                         </table>
@@ -842,7 +843,7 @@
                         <table class="style14">
                             <tr>
                                 <td class="style24">
-                                    <asp:Label ID="lblPaso5" runat="server" Text="Paso 5 de 6"></asp:Label>
+                                    <asp:Label ID="lblPaso5" runat="server" Text="Paso 5 de 6" CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style25">
                                     &nbsp;</td>
@@ -856,7 +857,7 @@
                             <tr>
                                 <td class="style24" colspan="2">
                                     <asp:Label ID="lblIdiomasPasatiempos" runat="server" 
-                                        Text="Idiomas y pasatiempos"></asp:Label>
+                                        Text="Idiomas y pasatiempos" CssClass="Titulo3"></asp:Label>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -942,12 +943,12 @@
                                     &nbsp;</td>
                                 <td class="style11">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras3" runat="server" Text="Atrás" />
+                                    <asp:Button ID="btnAtras3" runat="server" Text="Atrás" CssClass="Boton" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar5" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelar5" runat="server" Text="Cancelar" CssClass="Boton" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnSiguiente5" runat="server" onclick="btnSiguiente5_Click" 
-                                        Text="Siguiente" />
+                                        Text="Siguiente" CssClass="Boton" />
                                 </td>
                             </tr>
                         </table>
@@ -957,7 +958,7 @@
                         <table class="style14">
                             <tr>
                                 <td class="style24">
-                                    <asp:Label ID="lblPaso6" runat="server" Text="Paso 6 de 6"></asp:Label>
+                                    <asp:Label ID="lblPaso6" runat="server" Text="Paso 6 de 6" CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style25">
                                     &nbsp;</td>
@@ -971,7 +972,7 @@
                             <tr>
                                 <td class="style24" colspan="2">
                                     <asp:Label ID="lblTerminosCondicionesUso" runat="server" 
-                                        Text="Términos y condiciones de uso"></asp:Label>
+                                        Text="Términos y condiciones de uso" CssClass="Titulo3"></asp:Label>
                                 </td>
                                 <td class="style17">
                                     &nbsp;</td>
@@ -983,7 +984,7 @@
                             <tr>
                                 <td class="style24" colspan="5">
                                     <asp:Panel ID="PanelTerminosCondiciones" runat="server" BorderStyle="Solid" 
-                                        BorderWidth="2px" Height="200px">
+                                        BorderWidth="2px" Height="170px">
                                         <table class="style14">
                                             <tr>
                                                 <td>
@@ -1033,10 +1034,10 @@
                                 <td class="style20">
                                     &nbsp;</td>
                                 <td class="style11">
-                                    <asp:Button ID="btnCancelar6" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelar6" runat="server" Text="Cancelar" CssClass="Boton" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnFinalizar" runat="server" onclick="btnFinalizar_Click" 
-                                        Text="Finalizar" />
+                                        Text="Finalizar" CssClass="Boton" />
                                 </td>
                             </tr>
                         </table>

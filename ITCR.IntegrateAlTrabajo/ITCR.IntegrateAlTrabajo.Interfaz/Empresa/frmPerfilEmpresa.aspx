@@ -102,7 +102,7 @@
             <td class="style12">
                 </td>
             <td class="style13">
-                <asp:Label ID="lblPerfil" runat="server" Text="Perfil"></asp:Label>
+                <asp:Label ID="lblPerfil" runat="server" Text="Perfil" CssClass="Titulo1"></asp:Label>
             </td>
             <td class="style14">
                 </td>
@@ -258,10 +258,10 @@
                                 &nbsp;</td>
                             <td>
                                 <asp:Button ID="btnEditar" runat="server" Text="Editar Perfil" Width="101px" 
-                                    onclick="btnEditar_Click" />
+                                    onclick="btnEditar_Click" CssClass="Boton" />
                                 &nbsp;
                                 <asp:Button ID="btnEliminar" runat="server" onclick="btnEliminar_Click" 
-                                    Text="Eliminar Cuenta" />
+                                    Text="Eliminar Cuenta" CssClass="Boton" />
                             </td>
                         </tr>
                     </table>

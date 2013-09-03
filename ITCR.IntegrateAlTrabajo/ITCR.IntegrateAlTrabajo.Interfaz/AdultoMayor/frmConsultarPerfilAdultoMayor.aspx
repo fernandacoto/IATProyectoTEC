@@ -131,7 +131,7 @@
             <td class="style5">
                 </td>
             <td class="style6" colspan="2">
-                <asp:Label ID="lblMiPerfil" runat="server" Text="Mi perfil"></asp:Label>
+                <asp:Label ID="lblMiPerfil" runat="server" Text="Mi perfil" CssClass="Titulo1"></asp:Label>
             </td>
             <td class="style8">
                 </td>
@@ -167,7 +167,8 @@
                     <table class="style9">
                         <tr>
                             <td class="style10" colspan="2">
-                                <asp:Label ID="lblDatosPersonales" runat="server" Text="Datos personales"></asp:Label>
+                                <asp:Label ID="lblDatosPersonales" runat="server" Text="Datos personales" 
+                                    CssClass="Titulo2"></asp:Label>
                             </td>
                             <td class="style28">
                             </td>
@@ -322,7 +323,7 @@
                     <table class="style9">
                         <tr>
                             <td class="style34">
-                                <asp:Label ID="lblEstudios" runat="server" Text="Estudios"></asp:Label>
+                                <asp:Label ID="lblEstudios" runat="server" Text="Estudios" CssClass="Titulo2"></asp:Label>
                             </td>
                             <td class="style36">
                             </td>
@@ -390,7 +391,7 @@
                         <tr>
                             <td class="style39">
                                 <asp:Label ID="lblExperienciasLaborales" runat="server" 
-                                    Text="Experiencias laborales"></asp:Label>
+                                    Text="Experiencias laborales" CssClass="Titulo2"></asp:Label>
                             </td>
                             <td class="style16">
                             </td>
@@ -458,7 +459,7 @@
                     <table class="style9">
                         <tr>
                             <td class="style18" colspan="2">
-                                <asp:Label ID="lblOtros" runat="server" Text="Otros"></asp:Label>
+                                <asp:Label ID="lblOtros" runat="server" Text="Otros" CssClass="Titulo2"></asp:Label>
                             </td>
                             <td class="style20">
                             </td>

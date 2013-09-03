@@ -61,7 +61,7 @@
             </td>
             <td class="style30" colspan="2">
                 <asp:Label ID="lblActualizarDatosPersonales" runat="server" 
-                    Text="Actualizar datos personales"></asp:Label>
+                    Text="Actualizar datos personales" CssClass="Titulo1"></asp:Label>
             </td>
             <td class="style7">
             </td>
@@ -210,7 +210,7 @@
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Panel ID="PanelBotonActualizar" runat="server" 
                                     HorizontalAlign="Right" Width="255px">
                                     <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" 
-                                        onclick="btnActualizar_Click" />
+                                        onclick="btnActualizar_Click" CssClass="Boton" />
                                 </asp:Panel>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </td>

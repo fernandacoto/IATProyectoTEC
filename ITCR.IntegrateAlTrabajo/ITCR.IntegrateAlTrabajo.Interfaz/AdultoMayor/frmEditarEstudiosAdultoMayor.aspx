@@ -97,7 +97,8 @@
             <td class="style4">
             </td>
             <td class="style5" colspan="2">
-                <asp:Label ID="lblEditarEstudios" runat="server" Text="Editar estudios"></asp:Label>
+                <asp:Label ID="lblEditarEstudios" runat="server" Text="Editar estudios" 
+                    CssClass="Titulo1"></asp:Label>
             </td>
             <td class="style7">
             </td>
@@ -197,9 +198,9 @@
                                             <td class="style11">
                                                 <asp:Panel ID="PanelBotonActualizar" runat="server" HorizontalAlign="Right">
                                                     <asp:Button ID="btnAgregar" runat="server" onclick="btnAgregar_Click" 
-                                                        Text="Agregar" />
+                                                        Text="Agregar" CssClass="Boton" />
                                                     <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" 
-                                                        onclick="btnActualizar_Click" />
+                                                        onclick="btnActualizar_Click" CssClass="Boton" />
                                                 </asp:Panel>
                                             </td>
                                         </tr>

@@ -300,3 +300,64 @@ div.accountInfo
 {
     background:#0079AD;
 }
+
+.Titulo1
+{
+    font-family:Century Gothic;
+    font-size:25px;
+    color:#0079AD;
+    font-weight:bold;
+}
+
+.Titulo2
+{
+    font-family:Century Gothic;
+    font-size:18px;
+    color:#0079AD;
+    font-weight:bold;
+}
+
+.Titulo3
+{
+    font-family:Century Gothic;
+    font-size:17px;
+    color:#379FCC;
+    font-weight:bold;
+}
+
+table
+{
+    font-family:Century Gothic;
+    font-size:15px;
+}
+
+input
+{
+    font-family:Century Gothic;
+    font-size:15px;
+}
+
+select
+{
+    font-family:Century Gothic;
+    font-size:15px;
+}
+
+.Boton
+{
+    background:-moz-linear-gradient(#f9f9f9 0%,#DADADA 100%);
+    background:-ms-linear-gradient(#f9f9f9 0%,#DADADA 100%); 
+    background:-o-linear-gradient(#f9f9f9 0%,#DADADA 100%); 
+    background:-webkit-linear-gradient(#f9f9f9 0%,#DADADA 100%); 
+    background:linear-gradient(#f9f9f9 0%,#DADADA 100%);
+    border:solid 1px #DEDEDE; 
+    text-align:center;
+    padding:5px; 
+    color:#333; 
+    width:90px; 
+}
+
+.Boton:hover {
+    background:-moz-linear-gradient(#fff 0%,#DEDEDE 100%);
+    color:#999; 
+   }

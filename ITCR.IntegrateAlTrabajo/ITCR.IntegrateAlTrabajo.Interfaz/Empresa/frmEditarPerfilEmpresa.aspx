@@ -82,7 +82,8 @@
             <td class="style4">
             </td>
             <td class="style12">
-                <asp:Label ID="lblEditarPerfilEmpresa" runat="server" Text="Editar Perfil"></asp:Label>
+                <asp:Label ID="lblEditarPerfilEmpresa" runat="server" Text="Editar Perfil" 
+                    CssClass="Titulo1"></asp:Label>
             </td>
             <td class="style6">
                 &nbsp;</td>
@@ -121,7 +122,7 @@
                                     <table class="style8">
                                         <tr>
                                             <td class="style13">
-                                                <asp:Label ID="lblPaso1E" runat="server" Text="Paso 1 de 2 "></asp:Label>
+                                                <asp:Label ID="lblPaso1E" runat="server" Text="Paso 1 de 2 " CssClass="Titulo2"></asp:Label>
                                             </td>
                                             <td class="style14">
                                                 &nbsp;</td>
@@ -283,7 +284,7 @@
                                     <table class="style8">
                                         <tr>
                                             <td class="style21">
-                                                <asp:Label ID="lblPaso2E" runat="server" Text="Paso 2 de 2"></asp:Label>
+                                                <asp:Label ID="lblPaso2E" runat="server" Text="Paso 2 de 2" CssClass="Titulo2"></asp:Label>
                                             </td>
                                             <td class="style18">
                                                 &nbsp;</td>

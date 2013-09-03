@@ -14,7 +14,10 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Autenticacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                txtNombreUsuario.Focus();
+            }
         }
 
         protected void btnIniciarSesion_Click(object sender, EventArgs e)

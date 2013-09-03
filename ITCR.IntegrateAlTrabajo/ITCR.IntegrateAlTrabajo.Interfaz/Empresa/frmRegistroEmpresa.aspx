@@ -96,7 +96,8 @@
             <td class="style8">
             </td>
             <td class="style9" colspan="3">
-                <asp:Label ID="lblRegistroEmpresa" runat="server" Text="Registro de Empresa"></asp:Label>
+                <asp:Label ID="lblRegistroEmpresa" runat="server" Text="Registro de Empresa" 
+                    CssClass="Titulo1"></asp:Label>
             </td>
             <td class="style15">
             </td>
@@ -129,7 +130,7 @@
                         <table class="style11">
                             <tr>
                                 <td class="style12">
-                                    <asp:Label ID="lblPaso1" runat="server" Text="Paso 1 de 3"></asp:Label>
+                                    <asp:Label ID="lblPaso1" runat="server" Text="Paso 1 de 3" CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style18">
                                     &nbsp;</td>
@@ -142,7 +143,8 @@
                             </tr>
                             <tr>
                                 <td class="style12">
-                                    <asp:Label ID="lblDatosBasicos" runat="server" Text="Datos Básicos"></asp:Label>
+                                    <asp:Label ID="lblDatosBasicos" runat="server" Text="Datos Básicos" 
+                                        CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style18">
                                     &nbsp;</td>
@@ -304,7 +306,7 @@
                         <table class="style11">
                             <tr>
                                 <td class="style21">
-                                    <asp:Label ID="lblPaso2" runat="server" Text="Paso 2 de 3"></asp:Label>
+                                    <asp:Label ID="lblPaso2" runat="server" Text="Paso 2 de 3" CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style18">
                                 </td>
@@ -403,18 +405,19 @@
                         <table class="style11">
                             <tr>
                                 <td class="style12" colspan="2">
-                                    <asp:Label ID="lblTerminos" runat="server" Text="Términos y Condiciones"></asp:Label>
+                                    <asp:Label ID="lblPaso3" runat="server" Text="Paso 3 de 3" CssClass="Titulo2"></asp:Label>
                                 </td>
                                 <td class="style14">
                                 </td>
                                 <td class="style19">
-                                </td>
+                                    &nbsp;</td>
                                 <td class="style9">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="style23">
-                                    <asp:Label ID="lblPaso3" runat="server" Text="Paso 3 de 3"></asp:Label>
+                                    <asp:Label ID="lblTerminos" runat="server" CssClass="Titulo3" 
+                                        Text="Términos y Condiciones"></asp:Label>
                                 </td>
                                 <td class="style25">
                                     &nbsp;</td>
@@ -428,7 +431,7 @@
                             <tr>
                                 <td class="style22" colspan="5">
                                     <asp:Panel ID="PanelTerminosCondiciones" runat="server" BorderStyle="Solid" 
-                                        BorderWidth="2px" Height="196px">
+                                        BorderWidth="2px" Height="170px">
                                         <asp:Label ID="lblPanelTerminos" runat="server" Text="Términos y Condiciones"></asp:Label>
                                         <br />
                                         <br />
