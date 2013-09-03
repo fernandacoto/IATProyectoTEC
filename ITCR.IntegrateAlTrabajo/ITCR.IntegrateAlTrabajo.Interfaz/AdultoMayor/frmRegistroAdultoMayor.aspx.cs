@@ -186,8 +186,9 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
         protected void btnCancelar1_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
         }
+
         protected void btnAgregarEstudio_Click(object sender, EventArgs e)
         {
             Validate("gvEstudios");
@@ -351,6 +352,48 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
             CorreoElectronico.FK_IdTipoContacto = 3;
             CorreoElectronico.FK_IdUsuario = IdUsuario;
             CorreoElectronico.Insertar();
+
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+        }
+
+        protected void btnCancelar3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+        }
+
+        protected void btnCancelar4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+        }
+
+        protected void btnCancelar5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+        }
+
+        protected void btnCancelar6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+        }
+
+        protected void btnAtras_Click(object sender, EventArgs e)
+        {
+            mvRegistroAdultoMayor.ActiveViewIndex = 0;
+        }
+
+        protected void btnAtras1_Click(object sender, EventArgs e)
+        {
+            mvRegistroAdultoMayor.ActiveViewIndex = 1;
+        }
+
+        protected void btnAtras2_Click(object sender, EventArgs e)
+        {
+            mvRegistroAdultoMayor.ActiveViewIndex = 2;
+        }
+
+        protected void btnAtras3_Click(object sender, EventArgs e)
+        {
+            mvRegistroAdultoMayor.ActiveViewIndex = 3;
         }
     }
 }

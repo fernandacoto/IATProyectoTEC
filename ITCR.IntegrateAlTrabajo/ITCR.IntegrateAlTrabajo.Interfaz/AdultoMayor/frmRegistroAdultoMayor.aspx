@@ -35,12 +35,10 @@
         }
         .style17
         {
-            width: 25px;
             height: 25px;
         }
         .style20
         {
-            width: 118px;
             height: 25px;
         }
         .style22
@@ -92,6 +90,16 @@
         .style33
         {
             width: 118px;
+        }
+        .style34
+        {
+            width: 255px;
+            height: 25px;
+        }
+        .style35
+        {
+            width: 240px;
+            height: 25px;
         }
     </style>
 </asp:Content>
@@ -407,7 +415,7 @@
                                 <td class="style24">
                                     <asp:Label ID="lblPaso2" runat="server" Text="Paso 2 de 6" CssClass="Titulo2"></asp:Label>
                                 </td>
-                                <td class="style25">
+                                <td class="style35">
                                     &nbsp;</td>
                                 <td class="style17">
                                 </td>
@@ -432,7 +440,7 @@
                                 <td class="style24">
                                     <asp:Label ID="lblNombreUsuario" runat="server" Text="Nombre de usuario"></asp:Label>
                                 </td>
-                                <td class="style25">
+                                <td class="style35">
                                     <asp:TextBox ID="txtNombreUsuario" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtNombreUsuario"
                                     ErrorMessage="El nombre de usuario es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosAutenticacion">*</asp:RequiredFieldValidator>
@@ -448,7 +456,7 @@
                                 <td class="style24">
                                     <asp:Label ID="lblContraseña" runat="server" Text="Contraseña"></asp:Label>
                                 </td>
-                                <td class="style25">
+                                <td class="style35">
                                     <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtContraseña"
                                     ErrorMessage="La contraseña es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosAutenticacion">*</asp:RequiredFieldValidator>
@@ -465,7 +473,7 @@
                                     <asp:Label ID="lblConfirmacionContraseña" runat="server" 
                                         Text="Confirmación de contraseña"></asp:Label>
                                 </td>
-                                <td class="style25">
+                                <td class="style35">
                                     <asp:TextBox ID="txtConfirmacionContraseña" runat="server" TextMode="Password"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="rfvConfirmacionContraseña" runat="server" ControlToValidate="txtConfirmacionContraseña"
                                     ErrorMessage="Es necesario confirmar la contraseña." ForeColor="Red" ValidationGroup="gvDatosAutenticacion">*</asp:RequiredFieldValidator>
@@ -482,7 +490,7 @@
                                     <asp:Label ID="lblIndicioContraseña" runat="server" 
                                         Text="Indicio de contraseña"></asp:Label>
                                 </td>
-                                <td class="style25">
+                                <td class="style35">
                                     <asp:TextBox ID="txtIndicioContraseña" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="rfvIndicioContraseña" runat="server" ControlToValidate="txtIndicioContraseña"
                                     ErrorMessage="El indicio de contraseña es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosAutenticacion">*</asp:RequiredFieldValidator>
@@ -497,17 +505,15 @@
                             <tr>
                                 <td class="style24">
                                     &nbsp;</td>
-                                <td class="style25">
+                                <td class="style35">
                                     &nbsp;</td>
-                                <td class="style17">
-                                    &nbsp;</td>
-                                <td class="style20">
-                                    &nbsp;</td>
-                                <td class="style11">
-                                    <asp:Button ID="btnCancelar2" runat="server" Text="Cancelar" CssClass="Boton" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnSiguiente2" runat="server" Text="Siguiente" 
-                                        onclick="btnSiguiente2_Click" CssClass="Boton" />
+                                <td class="style17" colspan="3">
+                                    <asp:Button ID="btnAtras" runat="server" CssClass="Boton" 
+                                        onclick="btnAtras_Click" Text="Atrás" />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnCancelar2" runat="server" CssClass="Boton" 
+                                        Text="Cancelar" />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnSiguiente2" runat="server" CssClass="Boton" 
+                                        onclick="btnSiguiente2_Click" Text="Siguiente" />
                                 </td>
                             </tr>
                         </table>
@@ -660,16 +666,16 @@
                                     &nbsp;</td>
                                 <td class="style17">
                                     &nbsp;</td>
-                                <td class="style20">
-                                    &nbsp;</td>
-                                <td class="style11">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras1" runat="server" Text="Atrás" CssClass="Boton" />
+                                <td class="style20" colspan="2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Button ID="btnAtras1" runat="server" CssClass="Boton" 
+                                        onclick="btnAtras1_Click" Text="Atrás" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar3" runat="server" Text="Cancelar" CssClass="Boton" />
+                                    <asp:Button ID="btnCancelar3" runat="server" CssClass="Boton" 
+                                        onclick="btnCancelar3_Click" Text="Cancelar" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnSiguiente3" runat="server" onclick="btnSiguiente3_Click" 
-                                        Text="Siguiente" CssClass="Boton" />
+                                    <asp:Button ID="btnSiguiente3" runat="server" CssClass="Boton" 
+                                        onclick="btnSiguiente3_Click" Text="Siguiente" />
                                 </td>
                             </tr>
                         </table>
@@ -828,9 +834,11 @@
                                     &nbsp;</td>
                                 <td class="style11">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras2" runat="server" Text="Atrás" CssClass="Boton" />
+                                    <asp:Button ID="btnAtras2" runat="server" Text="Atrás" CssClass="Boton" 
+                                        onclick="btnAtras2_Click" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar4" runat="server" Text="Cancelar" CssClass="Boton" />
+                                    <asp:Button ID="btnCancelar4" runat="server" Text="Cancelar" CssClass="Boton" 
+                                        onclick="btnCancelar4_Click" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnSiguiente4" runat="server" onclick="btnSiguiente4_Click" 
                                         Text="Siguiente" CssClass="Boton" />
@@ -943,9 +951,11 @@
                                     &nbsp;</td>
                                 <td class="style11">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras3" runat="server" Text="Atrás" CssClass="Boton" />
+                                    <asp:Button ID="btnAtras3" runat="server" Text="Atrás" CssClass="Boton" 
+                                        onclick="btnAtras3_Click" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar5" runat="server" Text="Cancelar" CssClass="Boton" />
+                                    <asp:Button ID="btnCancelar5" runat="server" Text="Cancelar" CssClass="Boton" 
+                                        onclick="btnCancelar5_Click" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnSiguiente5" runat="server" onclick="btnSiguiente5_Click" 
                                         Text="Siguiente" CssClass="Boton" />
@@ -1034,7 +1044,8 @@
                                 <td class="style20">
                                     &nbsp;</td>
                                 <td class="style11">
-                                    <asp:Button ID="btnCancelar6" runat="server" Text="Cancelar" CssClass="Boton" />
+                                    <asp:Button ID="btnCancelar6" runat="server" Text="Cancelar" CssClass="Boton" 
+                                        onclick="btnCancelar6_Click" />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:Button ID="btnFinalizar" runat="server" onclick="btnFinalizar_Click" 
                                         Text="Finalizar" CssClass="Boton" />
