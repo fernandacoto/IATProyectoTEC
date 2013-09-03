@@ -27,3 +27,7 @@ D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bi
 D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.csprojResolveAssemblyReference.cache
 D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
 D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb

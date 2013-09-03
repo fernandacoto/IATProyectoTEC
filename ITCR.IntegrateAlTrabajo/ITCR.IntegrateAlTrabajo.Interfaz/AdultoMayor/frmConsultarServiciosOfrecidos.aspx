@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="frmConsultarServiciosOfrecidos.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor.frmConsultarServiciosOfrecidos" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestraAdultoMayor.Master" AutoEventWireup="true" CodeBehind="frmConsultarServiciosOfrecidos.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor.frmConsultarServiciosOfrecidos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
         .style3
@@ -75,7 +75,7 @@
         <tr>
             <td class="style4" colspan="7">
                 <asp:Label ID="lblConsultarServicios" runat="server" 
-                    Text="Mis Servicios"></asp:Label>
+                    Text="Mis Servicios" CssClass="Titulo1"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -125,13 +125,13 @@
                             <asp:TemplateColumn HeaderText="Editar">
                                 <ItemTemplate>
                                     <asp:ImageButton ID="ibtnEditar" runat="server" CommandName="Editar" 
-                                        ImageUrl="~/Multimedia/editar.gif" />
+                                        ImageUrl="~/Multimedia/icono-editar.jpg" Height="30px" Width="30px" />
                                 </ItemTemplate>
                             </asp:TemplateColumn>
                             <asp:TemplateColumn HeaderText="Eliminar">
                                 <ItemTemplate>
                                     <asp:ImageButton ID="ibtnEliminar" runat="server" CommandName="Eliminar" 
-                                        Height="24px" ImageUrl="~/Multimedia/RTEmagicC_EliminarPag_10.png" 
+                                        Height="24px" ImageUrl="~/Multimedia/icono-eliminar.jpg" 
                                         Width="23px" />
                                 </ItemTemplate>
                             </asp:TemplateColumn>
@@ -307,7 +307,7 @@
                                                     &nbsp;</td>
                                                 <td class="style11">
                                                     <asp:Button ID="btnGuardarServicio" runat="server" Enabled="False" 
-                                                        onclick="btnGuardarServicio_Click" Text="Guardar" />
+                                                        onclick="btnGuardarServicio_Click" Text="Guardar" CssClass="Boton" />
                                                 </td>
                                             </tr>
                                         </table>

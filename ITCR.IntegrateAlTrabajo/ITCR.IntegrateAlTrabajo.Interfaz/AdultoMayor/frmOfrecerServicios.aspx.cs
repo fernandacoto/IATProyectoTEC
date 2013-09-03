@@ -21,7 +21,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         {
             if (!IsPostBack)
             {
-                Session["Nombre_Usuario"] = "sat";
+                //Session["Nombre_Usuario"] = "sat";
                 mvOfrecerServicios.ActiveViewIndex = 0;
                 cargarTodosDropDownList();
             }
@@ -204,6 +204,8 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
                 drpHora4.Enabled = false;
                 drpHora5.Enabled = false;
                 drpHora6.Enabled = false;
+
+                //Response.Write(@"<SCRIPT LANGUAGE=""JavaScript"">alert('El servicio fue agregado exitosamente')</SCRIPT>");
             }
         }
 

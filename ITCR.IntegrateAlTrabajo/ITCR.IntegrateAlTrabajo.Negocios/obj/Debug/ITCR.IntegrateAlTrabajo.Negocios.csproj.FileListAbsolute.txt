@@ -47,3 +47,10 @@ D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios
 D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.csprojResolveAssemblyReference.cache
 D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.dll
 D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.pdb
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Negocios.dll
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Negocios.pdb
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.csprojResolveAssemblyReference.cache
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.dll
+E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Negocios\obj\Debug\ITCR.IntegrateAlTrabajo.Negocios.pdb
