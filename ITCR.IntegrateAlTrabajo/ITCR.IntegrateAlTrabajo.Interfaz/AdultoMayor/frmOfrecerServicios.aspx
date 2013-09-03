@@ -163,8 +163,8 @@
                                                     <asp:Label ID="lblCategoria" runat="server" Text="Categoría"></asp:Label>
                                                 </td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpCategoriaServicio" runat="server" Height="16px" 
-                                                        Width="121px">
+                                                    <asp:DropDownList ID="drpCategoriaServicio" runat="server" Height="30px" 
+                                                        Width="122px">
                                                     </asp:DropDownList>
                                                 </td>
                                             </tr>
@@ -173,7 +173,7 @@
                                                     <asp:Label ID="lblTipo" runat="server" Text="Tipo"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:DropDownList ID="drpTipoServicio" runat="server" Height="16px" 
+                                                    <asp:DropDownList ID="drpTipoServicio" runat="server" Height="30px" 
                                                         Width="121px">
                                                     </asp:DropDownList>
                                                 </td>
@@ -200,7 +200,7 @@
                                                     <asp:Label ID="lblHoras" runat="server" Text="Horas"></asp:Label>
                                                 </td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora1" runat="server" Height="16px" Width="121px" 
+                                                    <asp:DropDownList ID="drpHora1" runat="server" Height="30px" Width="121px" 
                                                         Enabled="False" onselectedindexchanged="drpHora1_SelectedIndexChanged">
                                                     </asp:DropDownList>
                                                 </td>
@@ -217,7 +217,7 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora2" runat="server" Height="16px" Width="121px" 
+                                                    <asp:DropDownList ID="drpHora2" runat="server" Height="30px" Width="121px" 
                                                         Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
@@ -234,7 +234,7 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora3" runat="server" Height="16px" Width="121px" 
+                                                    <asp:DropDownList ID="drpHora3" runat="server" Height="30px" Width="121px" 
                                                         Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
@@ -251,7 +251,7 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora4" runat="server" Height="16px" Width="121px" 
+                                                    <asp:DropDownList ID="drpHora4" runat="server" Height="30px" Width="121px" 
                                                         Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
@@ -268,7 +268,7 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora5" runat="server" Height="16px" Width="121px" 
+                                                    <asp:DropDownList ID="drpHora5" runat="server" Height="30px" Width="121px" 
                                                         Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
@@ -285,7 +285,7 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpHora6" runat="server" Height="16px" Width="121px" 
+                                                    <asp:DropDownList ID="drpHora6" runat="server" Height="30px" Width="121px" 
                                                         Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
