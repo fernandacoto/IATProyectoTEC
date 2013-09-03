@@ -294,7 +294,8 @@
                                 <td class="style19">
                                     &nbsp;</td>
                                 <td class="style9">
-                                    <asp:Button ID="btnCancelarPaso1" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelarPaso1" runat="server" Text="Cancelar" 
+                                        onclick="btnCancelarPaso1_Click" />
                                     &nbsp;
                                     <asp:Button ID="btnSiguientePaso1" runat="server" 
                                         onclick="btnSiguientePaso1_Click" Text="Siguiente" />
@@ -393,7 +394,8 @@
                                 <td class="style19">
                                     &nbsp;</td>
                                 <td class="style9">
-                                    <asp:Button ID="btnCancelarPaso2" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelarPaso2" runat="server" Text="Cancelar" 
+                                        onclick="btnCancelarPaso2_Click" />
                                     &nbsp;
                                     <asp:Button ID="btnSiguientePaso2" runat="server" 
                                         onclick="btnSiguientePaso2_Click" Text="Siguiente" />
@@ -471,7 +473,8 @@
                                 <td class="style19">
                                     &nbsp;</td>
                                 <td class="style9">
-                                    <asp:Button ID="btnCancelarPaso3" runat="server" Text="Cancelar" />
+                                    <asp:Button ID="btnCancelarPaso3" runat="server" Text="Cancelar" 
+                                        onclick="btnCancelarPaso3_Click" />
                                     &nbsp;
                                     <asp:Button ID="btnFinalizar" runat="server" onclick="btnFinalizar_Click" 
                                         Text="Finalizar" Enabled="False" style="height: 26px" />
