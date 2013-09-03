@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestraAdultoMayor.master.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.PaginaMaestraAdultoMayor" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestraEmpresa.master.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.PaginaMaestraEmpresa" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -44,12 +44,10 @@
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem Text="Mi perfil" Value="Mi perfil" 
-                            NavigateUrl="~/AdultoMayor/frmConsultarPerfilAdultoMayor.aspx" 
-                            Selected="True"/>
-                        <asp:MenuItem Text="Ofrecer servicios" Value="Ofrecer servicios" 
-                            NavigateUrl="~/AdultoMayor/frmOfrecerServicios.aspx"/>
-                        <asp:MenuItem Text="Mis servicios" Value="Mis servicios"></asp:MenuItem>
-                        <asp:MenuItem Text="Ofertas de trabajo" Value="Ofertas de trabajo">
+                            NavigateUrl="~/Empresa/frmPerfilEmpresa.aspx" Selected="True"/>
+                        <asp:MenuItem Text="Ofertas de trabajo" Value="Ofertas de trabajo"/>
+                        <asp:MenuItem Text="Mis ofertas" Value="Mis ofertas"></asp:MenuItem>
+                        <asp:MenuItem Text="Servicios" Value="Servicios">
                         </asp:MenuItem>
                         <asp:MenuItem Text="Noticias y artículos" Value="Noticias y artículos">
                         </asp:MenuItem>
