@@ -52,7 +52,6 @@
         }
         .style25
         {
-            width: 299px;
             height: 25px;
         }
         .style26
@@ -90,11 +89,6 @@
         .style33
         {
             width: 118px;
-        }
-        .style34
-        {
-            width: 255px;
-            height: 25px;
         }
         .style35
         {
@@ -392,18 +386,14 @@
                             <tr>
                                 <td class="style24">
                                     &nbsp;</td>
-                                <td class="style25">
-                                    &nbsp;</td>
-                                <td class="style17">
-                                    &nbsp;</td>
-                                <td class="style20">
-                                    &nbsp;</td>
-                                <td class="style11">
-                                    <asp:Button ID="btnCancelar1" runat="server" Text="Cancelar" 
-                                        onclick="btnCancelar1_Click" CssClass="Boton" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnSiguiente1" runat="server" onclick="btnSiguiente1_Click" 
-                                        Text="Siguiente" CssClass="Boton" />
+                                <td class="style25" colspan="4">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Panel ID="Panel1" runat="server" HorizontalAlign="Right">
+                                        <asp:Button ID="btnCancelar1" runat="server" CssClass="Boton" 
+                                            onclick="btnCancelar1_Click" Text="Cancelar" />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="btnSiguiente1" runat="server" CssClass="Boton" 
+                                            onclick="btnSiguiente1_Click" Text="Siguiente" />
+                                    </asp:Panel>
                                 </td>
                             </tr>
                         </table>
@@ -508,13 +498,16 @@
                                 <td class="style35">
                                     &nbsp;</td>
                                 <td class="style17" colspan="3">
-                                    <asp:Button ID="btnAtras" runat="server" CssClass="Boton" 
-                                        onclick="btnAtras_Click" Text="Atrás" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnCancelar2" runat="server" CssClass="Boton" 
-                                        Text="Cancelar" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnSiguiente2" runat="server" CssClass="Boton" 
-                                        onclick="btnSiguiente2_Click" Text="Siguiente" />
-                                </td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Panel ID="Panel3" runat="server" HorizontalAlign="Right">
+                                        <asp:Button ID="btnAtras" runat="server" CssClass="Boton" 
+                                            onclick="btnAtras_Click" Text="Atrás" />
+                                        &nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="btnCancelar2" runat="server" CssClass="Boton" Text="Cancelar" />
+                                        &nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="btnSiguiente2" runat="server" CssClass="Boton" 
+                                            onclick="btnSiguiente2_Click" Text="Siguiente" />
+                                    </asp:Panel>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;</td>
                             </tr>
                         </table>
                     </asp:View>
@@ -667,15 +660,16 @@
                                 <td class="style17">
                                     &nbsp;</td>
                                 <td class="style20" colspan="2">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras1" runat="server" CssClass="Boton" 
-                                        onclick="btnAtras1_Click" Text="Atrás" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar3" runat="server" CssClass="Boton" 
-                                        onclick="btnCancelar3_Click" Text="Cancelar" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnSiguiente3" runat="server" CssClass="Boton" 
-                                        onclick="btnSiguiente3_Click" Text="Siguiente" />
+                                    <asp:Panel ID="Panel4" runat="server" HorizontalAlign="Right">
+                                        <asp:Button ID="btnAtras1" runat="server" CssClass="Boton" 
+                                            onclick="btnAtras1_Click" Text="Atrás" />
+                                        &nbsp;&nbsp;
+                                        <asp:Button ID="btnCancelar3" runat="server" CssClass="Boton" 
+                                            onclick="btnCancelar3_Click" Text="Cancelar" />
+                                        &nbsp;&nbsp;
+                                        <asp:Button ID="btnSiguiente3" runat="server" CssClass="Boton" 
+                                            onclick="btnSiguiente3_Click" Text="Siguiente" />
+                                    </asp:Panel>
                                 </td>
                             </tr>
                         </table>
@@ -833,15 +827,16 @@
                                 <td class="style20">
                                     &nbsp;</td>
                                 <td class="style11">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras2" runat="server" Text="Atrás" CssClass="Boton" 
-                                        onclick="btnAtras2_Click" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar4" runat="server" Text="Cancelar" CssClass="Boton" 
-                                        onclick="btnCancelar4_Click" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnSiguiente4" runat="server" onclick="btnSiguiente4_Click" 
-                                        Text="Siguiente" CssClass="Boton" />
+                                    <asp:Panel ID="Panel5" runat="server" HorizontalAlign="Right">
+                                        <asp:Button ID="btnAtras2" runat="server" CssClass="Boton" 
+                                            onclick="btnAtras2_Click" Text="Atrás" />
+                                        &nbsp;&nbsp;
+                                        <asp:Button ID="btnCancelar4" runat="server" CssClass="Boton" 
+                                            onclick="btnCancelar4_Click" Text="Cancelar" />
+                                        &nbsp;&nbsp;
+                                        <asp:Button ID="btnSiguiente4" runat="server" CssClass="Boton" 
+                                            onclick="btnSiguiente4_Click" Text="Siguiente" />
+                                    </asp:Panel>
                                 </td>
                             </tr>
                         </table>
@@ -950,15 +945,17 @@
                                 <td class="style20">
                                     &nbsp;</td>
                                 <td class="style11">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnAtras3" runat="server" Text="Atrás" CssClass="Boton" 
-                                        onclick="btnAtras3_Click" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnCancelar5" runat="server" Text="Cancelar" CssClass="Boton" 
-                                        onclick="btnCancelar5_Click" />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnSiguiente5" runat="server" onclick="btnSiguiente5_Click" 
-                                        Text="Siguiente" CssClass="Boton" />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Panel ID="Panel2" runat="server" HorizontalAlign="Right">
+                                        <asp:Button ID="btnAtras3" runat="server" CssClass="Boton" 
+                                            onclick="btnAtras3_Click" Text="Atrás" />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="btnCancelar5" runat="server" CssClass="Boton" 
+                                            onclick="btnCancelar5_Click" Text="Cancelar" />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="btnSiguiente5" runat="server" CssClass="Boton" 
+                                            onclick="btnSiguiente5_Click" Text="Siguiente" />
+                                    </asp:Panel>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </td>
                             </tr>
                         </table>
@@ -1044,12 +1041,15 @@
                                 <td class="style20">
                                     &nbsp;</td>
                                 <td class="style11">
-                                    <asp:Button ID="btnCancelar6" runat="server" Text="Cancelar" CssClass="Boton" 
-                                        onclick="btnCancelar6_Click" />
+                                    <asp:Panel ID="Panel6" runat="server" HorizontalAlign="Right">
+                                        <asp:Button ID="btnCancelar6" runat="server" CssClass="Boton" 
+                                            onclick="btnCancelar6_Click" Text="Cancelar" />
+                                        &nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="btnFinalizar" runat="server" CssClass="Boton" 
+                                            onclick="btnFinalizar_Click" Text="Finalizar" />
+                                    </asp:Panel>
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <asp:Button ID="btnFinalizar" runat="server" onclick="btnFinalizar_Click" 
-                                        Text="Finalizar" CssClass="Boton" />
-                                </td>
+                                    </td>
                             </tr>
                         </table>
                     </asp:View>

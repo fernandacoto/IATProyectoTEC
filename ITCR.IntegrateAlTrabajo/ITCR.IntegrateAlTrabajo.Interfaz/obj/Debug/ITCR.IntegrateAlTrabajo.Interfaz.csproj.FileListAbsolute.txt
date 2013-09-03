@@ -52,15 +52,6 @@ D:\Proyecto de software\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz
 D:\Proyecto de software\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.csprojResolveAssemblyReference.cache
 D:\Proyecto de software\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.dll
 D:\Proyecto de software\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.pdb
-C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Interfaz.dll
-C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Interfaz.pdb
-C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Datos.dll
-C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Negocios.dll
-C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Datos.pdb
-C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Negocios.pdb
-C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.csprojResolveAssemblyReference.cache
-C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.dll
-C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.pdb
 D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Interfaz.dll
 D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Interfaz.pdb
 D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Datos.dll
@@ -79,3 +70,12 @@ E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.I
 E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.csprojResolveAssemblyReference.cache
 E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.dll
 E:\Satcha\Desktop\Proyecto\IAT-IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.pdb
+C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Interfaz.dll
+C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Interfaz.pdb
+C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Datos.dll
+C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Negocios.dll
+C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Datos.pdb
+C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\bin\ITCR.IntegrateAlTrabajo.Negocios.pdb
+C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.csprojResolveAssemblyReference.cache
+C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.dll
+C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Interfaz\obj\Debug\ITCR.IntegrateAlTrabajo.Interfaz.pdb
