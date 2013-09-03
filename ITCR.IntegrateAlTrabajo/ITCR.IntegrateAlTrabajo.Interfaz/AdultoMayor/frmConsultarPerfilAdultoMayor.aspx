@@ -38,12 +38,7 @@
         }
         .style16
         {
-            width: 31px;
-            height: 25px;
-        }
-        .style17
-        {
-            width: 83px;
+            width: 23px;
             height: 25px;
         }
         .style18
@@ -117,6 +112,16 @@
         .style37
         {
             height: 22px;
+        }
+        .style39
+        {
+            height: 25px;
+            width: 410px;
+        }
+        .style40
+        {
+            width: 121px;
+            height: 25px;
         }
     </style>
 </asp:Content>
@@ -383,16 +388,23 @@
                     BorderWidth="2px" Height="120px" ScrollBars="Auto">
                     <table class="style9">
                         <tr>
-                            <td class="style14">
+                            <td class="style39">
                                 <asp:Label ID="lblExperienciasLaborales" runat="server" 
                                     Text="Experiencias laborales"></asp:Label>
                             </td>
                             <td class="style16">
                             </td>
-                            <td class="style17">
+                            <td class="style40">
                             </td>
                             <td class="style6">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Panel ID="Panel1" runat="server">
+                                </asp:Panel>
+                                <asp:Panel ID="PanelBotonEditarExperienciasLaborales" runat="server" 
+                                    HorizontalAlign="Right">
+                                    <asp:ImageButton ID="ibtnEditarExperienciasLaborales" runat="server" 
+                                        Height="50px" ImageUrl="~/Multimedia/icono-editar.jpg" 
+                                        onclick="ibtnEditarExperienciasLaborales_Click" Width="50px" />
+                                </asp:Panel>
                             </td>
                         </tr>
                         <tr>

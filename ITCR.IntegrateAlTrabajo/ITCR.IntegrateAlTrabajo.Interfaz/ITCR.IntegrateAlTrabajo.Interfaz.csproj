@@ -58,6 +58,7 @@
     <Content Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmEditarDatosPersonalesAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmEditarEstudiosAdultoMayor.aspx" />
+    <Content Include="AdultoMayor\frmEditarExperienciasLaboralesAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmOfrecerServicios.aspx" />
     <Content Include="AdultoMayor\frmRegistroAdultoMayor.aspx" />
     <Content Include="Empresa\frmEditarPerfilEmpresa.aspx" />
@@ -139,6 +140,13 @@
     </Compile>
     <Compile Include="AdultoMayor\frmEditarEstudiosAdultoMayor.aspx.designer.cs">
       <DependentUpon>frmEditarEstudiosAdultoMayor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdultoMayor\frmEditarExperienciasLaboralesAdultoMayor.aspx.cs">
+      <DependentUpon>frmEditarExperienciasLaboralesAdultoMayor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdultoMayor\frmEditarExperienciasLaboralesAdultoMayor.aspx.designer.cs">
+      <DependentUpon>frmEditarExperienciasLaboralesAdultoMayor.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdultoMayor\frmOfrecerServicios.aspx.cs">
       <DependentUpon>frmOfrecerServicios.aspx</DependentUpon>

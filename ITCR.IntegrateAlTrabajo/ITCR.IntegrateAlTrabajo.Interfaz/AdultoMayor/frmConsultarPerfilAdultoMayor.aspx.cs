@@ -287,5 +287,10 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         {
             Response.Redirect("frmEditarDatosPersonalesAdultoMayor.aspx");
         }
+
+        protected void ibtnEditarExperienciasLaborales_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("frmEditarExperienciasLaboralesAdultoMayor.aspx");
+        }
     }
 }

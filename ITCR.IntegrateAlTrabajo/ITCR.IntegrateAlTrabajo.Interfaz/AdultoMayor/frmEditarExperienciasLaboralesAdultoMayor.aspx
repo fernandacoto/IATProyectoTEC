@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestraAdultoMayor.Master" AutoEventWireup="true" CodeBehind="frmEditarExperienciasLaboralesAdultoMayor.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor.frmEditarEstudiosAdultoMayor" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestraAdultoMayor.Master" AutoEventWireup="true" CodeBehind="frmEditarExperienciasLaboralesAdultoMayor.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor.frmEditarExperienciasLaboralesAdultoMayor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 
    <script id="clientEventHandlersJS" language="javascript" type="text/javascript">
 
-       function confirmarBorradoEstudio() {
+       function confirmarBorradoExperienciaLaboral() {
            if (confirm("¿Está seguro que desea borrar este estudio? Los cambios son irreversibles.", "Confirmación de borrado") == true)
                return true;
            else
@@ -87,9 +87,7 @@
             width: 117px;
             height: 25px;
         }
-        .GridMantenimiento
-        {}
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <table class="style3">
@@ -129,61 +127,63 @@
             <td class="style4">
                 &nbsp;</td>
             <td class="style5" colspan="5">
-                <asp:Panel ID="PanelDatos" runat="server" BorderStyle="Solid" BorderWidth="2px">
+                <asp:Panel ID="PanelDatosExperienciasLaborales" runat="server">
                     <table class="style14">
                         <tr>
                             <td class="style24" colspan="5">
-                                <asp:Panel ID="PanelIngresoDatos" runat="server" BorderStyle="Solid" 
+                                <asp:Panel ID="PanelIngresoDatos0" runat="server" BorderStyle="Solid" 
                                         BorderWidth="2px">
                                     <table class="style14">
                                         <tr>
                                             <td class="style26">
-                                                <asp:Label ID="lblAñoInicial1" runat="server" Text="Año inicial"></asp:Label>
+                                                <asp:Label ID="lblAñoInicial2" runat="server" Text="Año inicial"></asp:Label>
                                             </td>
                                             <td class="style27">
-                                                <asp:TextBox ID="txtAñoInicialEstudio" runat="server"></asp:TextBox>
-                                                <asp:RegularExpressionValidator ID="revAñoInicialEstudio" runat="server" ControlToValidate="txtAñoInicialEstudio"
+                                                <asp:TextBox ID="txtAñoInicialExperienciaLaboral" runat="server"></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="revAñoInicialExperienciaLaboral" 
+                                                        runat="server" ControlToValidate="txtAñoInicialExperienciaLaboral"
                                                     ErrorMessage="El año inicial introducido es inválido." ForeColor="Red" ValidationExpression="([0-9]{4})"
-                                                    ValidationGroup="gvEstudios">*</asp:RegularExpressionValidator>
-                                                <asp:RequiredFieldValidator ID="rfvAñoInicial" runat="server" ControlToValidate="txtAñoInicialEstudio"
+                                                    ValidationGroup="gvExperienciasLaborales">*</asp:RegularExpressionValidator>
+                                                <asp:RequiredFieldValidator ID="rfvAñoInicialExperienciaLaboral" runat="server" ControlToValidate="txtAñoInicialExperienciaLaboral"
                                                     ErrorMessage="El año inicial es un dato requerido." ForeColor="Red" 
-                                                        ValidationGroup="gvEstudios">*</asp:RequiredFieldValidator>
+                                                        ValidationGroup="gvExperienciasLaborales">*</asp:RequiredFieldValidator>
                                             </td>
                                             <td class="style28">
                                             </td>
                                             <td class="style29">
-                                                <asp:Label ID="lblAñoFinal1" runat="server" Text="Año final"></asp:Label>
+                                                <asp:Label ID="lblAñoFinal2" runat="server" Text="Año final"></asp:Label>
                                             </td>
                                             <td class="style11">
-                                                <asp:TextBox ID="txtAñoFinalEstudio" runat="server"></asp:TextBox>
-                                                <asp:RegularExpressionValidator ID="revAñoFinalEstudio" runat="server" ControlToValidate="txtAñoFinalEstudio"
+                                                <asp:TextBox ID="txtAñoFinalExperienciaLaboral" runat="server"></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="revAñoFinalExperienciaLaboral" 
+                                                        runat="server" ControlToValidate="txtAñoFinalExperienciaLaboral"
                                                     ErrorMessage="El año final introducido es inválido." ForeColor="Red" ValidationExpression="([0-9]{4})"
-                                                    ValidationGroup="gvEstudios">*</asp:RegularExpressionValidator>
-                                                <asp:RequiredFieldValidator ID="rfvAñoFinal" runat="server" ControlToValidate="txtAñoFinalEstudio"
+                                                    ValidationGroup="gvExperienciasLaborales">*</asp:RegularExpressionValidator>
+                                                <asp:RequiredFieldValidator ID="rfvAñoFinalExperienciaLaboral" runat="server" ControlToValidate="txtAñoFinalExperienciaLaboral"
                                                     ErrorMessage="El año final es un dato requerido." ForeColor="Red" 
-                                                        ValidationGroup="gvEstudios">*</asp:RequiredFieldValidator>
+                                                        ValidationGroup="gvExperienciasLaborales">*</asp:RequiredFieldValidator>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="style26">
-                                                <asp:Label ID="lblInstitucion" runat="server" Text="Institución"></asp:Label>
+                                                <asp:Label ID="lblEmpresa" runat="server" Text="Empresa"></asp:Label>
                                             </td>
                                             <td class="style27">
-                                                <asp:TextBox ID="txtInstitucionEstudio" runat="server"></asp:TextBox>
-                                                <asp:RequiredFieldValidator ID="rfvInstitucionEstudio" runat="server" ControlToValidate="txtInstitucionEstudio"
-                                                    ErrorMessage="La institución es un dato requerido." ForeColor="Red" 
-                                                        ValidationGroup="gvEstudios">*</asp:RequiredFieldValidator>
+                                                <asp:TextBox ID="txtEmpresa" runat="server"></asp:TextBox>
+                                                <asp:RequiredFieldValidator ID="rfvEmpresa" runat="server" ControlToValidate="txtEmpresa"
+                                                    ErrorMessage="La empresa es un dato requerido." ForeColor="Red" 
+                                                        ValidationGroup="gvExperienciasLaborales">*</asp:RequiredFieldValidator>
                                             </td>
                                             <td class="style28">
                                                 &nbsp;</td>
                                             <td class="style29">
-                                                <asp:Label ID="lblTitulo" runat="server" Text="Título"></asp:Label>
+                                                <asp:Label ID="lblPuesto" runat="server" Text="Puesto"></asp:Label>
                                             </td>
                                             <td class="style11">
-                                                <asp:TextBox ID="txtTituloEstudio" runat="server"></asp:TextBox>
-                                                <asp:RequiredFieldValidator ID="rfvTituloEstudio" runat="server" ControlToValidate="txtTituloEstudio"
-                                                    ErrorMessage="El título es un dato requerido." ForeColor="Red" 
-                                                        ValidationGroup="gvEstudios">*</asp:RequiredFieldValidator>
+                                                <asp:TextBox ID="txtPuesto" runat="server"></asp:TextBox>
+                                                <asp:RequiredFieldValidator ID="rfvPuesto" runat="server" ControlToValidate="txtPuesto"
+                                                    ErrorMessage="El puesto es un dato requerido." ForeColor="Red" 
+                                                        ValidationGroup="gvExperienciasLaborales">*</asp:RequiredFieldValidator>
                                             </td>
                                         </tr>
                                         <tr>
@@ -199,8 +199,8 @@
                                                 <asp:Panel ID="PanelBotonActualizar" runat="server" HorizontalAlign="Right">
                                                     <asp:Button ID="btnAgregar" runat="server" onclick="btnAgregar_Click" 
                                                         Text="Agregar" />
-                                                    <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" 
-                                                        onclick="btnActualizar_Click" />
+                                                    <asp:Button ID="btnActualizar" runat="server" onclick="btnActualizar_Click" 
+                                                        Text="Actualizar" />
                                                 </asp:Panel>
                                             </td>
                                         </tr>
@@ -222,25 +222,25 @@
                         </tr>
                         <tr>
                             <td class="style24" colspan="5">
-                                <asp:Panel ID="PanelTablaDatosEstudios" runat="server" BorderStyle="None" 
-                                        BorderWidth="2px" Height="250px" ScrollBars="Auto">
-                                    <asp:DataGrid ID="dgEstudios" runat="server" AutoGenerateColumns="False" 
-                                            BackColor="WhiteSmoke" BorderStyle="Solid" CssClass="GridMantenimiento" 
-                                            Font-Names="Verdana" Font-Size="Smaller" ForeColor="Black" Height="19px" 
-                                            Width="99%" onitemcommand="dgEstudios_ItemCommand" 
-                                        onitemdatabound="dgEstudios_ItemDataBound">
+                                <asp:Panel ID="PanelTablaDatosExperienciasLaborales" runat="server" 
+                                        BorderStyle="None" BorderWidth="2px" Height="250px" ScrollBars="Auto">
+                                    <asp:DataGrid ID="dgExperienciasLaborales" runat="server" 
+                                        AutoGenerateColumns="False" BackColor="WhiteSmoke" BorderStyle="Solid" 
+                                        CssClass="GridMantenimiento" Font-Names="Verdana" Font-Size="Smaller" 
+                                        ForeColor="Black" Height="19px" 
+                                        onitemcommand="dgExperienciasLaborales_ItemCommand" 
+                                        onitemdatabound="dgExperienciasLaborales_ItemDataBound" Width="99%">
                                         <AlternatingItemStyle BackColor="Gainsboro" />
                                         <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
-                                                Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
+                                            Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                         <Columns>
-                                            <asp:BoundColumn DataField="Id_Estudio" HeaderText="Id_Estudio" Visible="False">
+                                            <asp:BoundColumn DataField="Id_ExperienciaLaboral" 
+                                                HeaderText="Id_ExperienciaLaboral" Visible="False"></asp:BoundColumn>
+                                            <asp:BoundColumn DataField="AnnoInicial" HeaderText="Año inicial">
                                             </asp:BoundColumn>
-                                            <asp:BoundColumn HeaderText="Año inicial" DataField="AnnoInicial">
-                                            </asp:BoundColumn>
-                                            <asp:BoundColumn HeaderText="Año final" DataField="AnnoFinal"></asp:BoundColumn>
-                                            <asp:BoundColumn HeaderText="Institución" DataField="Institucion">
-                                            </asp:BoundColumn>
-                                            <asp:BoundColumn HeaderText="Título" DataField="Titulo"></asp:BoundColumn>
+                                            <asp:BoundColumn DataField="AnnoFinal" HeaderText="Año final"></asp:BoundColumn>
+                                            <asp:BoundColumn DataField="Empresa" HeaderText="Empresa"></asp:BoundColumn>
+                                            <asp:BoundColumn DataField="Puesto" HeaderText="Puesto"></asp:BoundColumn>
                                             <asp:TemplateColumn>
                                                 <ItemTemplate>
                                                     <asp:ImageButton ID="ibtnEditar" runat="server" CommandName="Editar" 

@@ -10,7 +10,7 @@
 namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
     
     
-    public partial class frmEditarEstudiosAdultoMayor {
+    public partial class frmEditarExperienciasLaboralesAdultoMayor {
         
         /// <summary>
         /// lblActualizarExperienciasLaborales control.
@@ -22,148 +22,148 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblActualizarExperienciasLaborales;
         
         /// <summary>
-        /// PanelDatos control.
+        /// PanelDatosExperienciasLaborales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelDatos;
+        protected global::System.Web.UI.WebControls.Panel PanelDatosExperienciasLaborales;
         
         /// <summary>
-        /// PanelIngresoDatos control.
+        /// PanelIngresoDatos0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelIngresoDatos;
+        protected global::System.Web.UI.WebControls.Panel PanelIngresoDatos0;
         
         /// <summary>
-        /// lblAñoInicial1 control.
+        /// lblAñoInicial2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAñoInicial1;
+        protected global::System.Web.UI.WebControls.Label lblAñoInicial2;
         
         /// <summary>
-        /// txtAñoInicialEstudio control.
+        /// txtAñoInicialExperienciaLaboral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAñoInicialEstudio;
+        protected global::System.Web.UI.WebControls.TextBox txtAñoInicialExperienciaLaboral;
         
         /// <summary>
-        /// revAñoInicialEstudio control.
+        /// revAñoInicialExperienciaLaboral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revAñoInicialEstudio;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revAñoInicialExperienciaLaboral;
         
         /// <summary>
-        /// rfvAñoInicial control.
+        /// rfvAñoInicialExperienciaLaboral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAñoInicial;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAñoInicialExperienciaLaboral;
         
         /// <summary>
-        /// lblAñoFinal1 control.
+        /// lblAñoFinal2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAñoFinal1;
+        protected global::System.Web.UI.WebControls.Label lblAñoFinal2;
         
         /// <summary>
-        /// txtAñoFinalEstudio control.
+        /// txtAñoFinalExperienciaLaboral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAñoFinalEstudio;
+        protected global::System.Web.UI.WebControls.TextBox txtAñoFinalExperienciaLaboral;
         
         /// <summary>
-        /// revAñoFinalEstudio control.
+        /// revAñoFinalExperienciaLaboral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revAñoFinalEstudio;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revAñoFinalExperienciaLaboral;
         
         /// <summary>
-        /// rfvAñoFinal control.
+        /// rfvAñoFinalExperienciaLaboral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAñoFinal;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAñoFinalExperienciaLaboral;
         
         /// <summary>
-        /// lblInstitucion control.
+        /// lblEmpresa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInstitucion;
+        protected global::System.Web.UI.WebControls.Label lblEmpresa;
         
         /// <summary>
-        /// txtInstitucionEstudio control.
+        /// txtEmpresa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtInstitucionEstudio;
+        protected global::System.Web.UI.WebControls.TextBox txtEmpresa;
         
         /// <summary>
-        /// rfvInstitucionEstudio control.
+        /// rfvEmpresa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvInstitucionEstudio;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmpresa;
         
         /// <summary>
-        /// lblTitulo control.
+        /// lblPuesto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitulo;
+        protected global::System.Web.UI.WebControls.Label lblPuesto;
         
         /// <summary>
-        /// txtTituloEstudio control.
+        /// txtPuesto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTituloEstudio;
+        protected global::System.Web.UI.WebControls.TextBox txtPuesto;
         
         /// <summary>
-        /// rfvTituloEstudio control.
+        /// rfvPuesto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTituloEstudio;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPuesto;
         
         /// <summary>
         /// PanelBotonActualizar control.
@@ -193,21 +193,21 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Button btnActualizar;
         
         /// <summary>
-        /// PanelTablaDatosEstudios control.
+        /// PanelTablaDatosExperienciasLaborales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelTablaDatosEstudios;
+        protected global::System.Web.UI.WebControls.Panel PanelTablaDatosExperienciasLaborales;
         
         /// <summary>
-        /// dgEstudios control.
+        /// dgExperienciasLaborales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid dgEstudios;
+        protected global::System.Web.UI.WebControls.DataGrid dgExperienciasLaborales;
     }
 }
