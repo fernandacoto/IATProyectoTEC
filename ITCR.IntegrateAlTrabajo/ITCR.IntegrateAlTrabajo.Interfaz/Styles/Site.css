@@ -354,7 +354,9 @@ select
     text-align:center;
     padding:5px; 
     color:#333; 
-    width:90px; 
+    width:100px; 
+    font-family:Century Gothic;
+    font-size:12px;
 }
 
 .Boton:hover {

@@ -21,7 +21,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
         {
             if (!IsPostBack)
             {
-                Session["Nombre_Usuario"] = "ina";
+                //Session["Nombre_Usuario"] = "ina";
                 mvEditarPerfil.ActiveViewIndex = 0;
                 cargarTodosDropDownList();
                 cargar_datos_usuario();
@@ -184,6 +184,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
                     Telefono.Actualizar();
                     Empresa.Actualizar();
                     mvEditarPerfil.ActiveViewIndex = 0;
+                    Response.Redirect("./frmPerfilEmpresa.aspx");
                 }
                 else
                 {
@@ -201,6 +202,16 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
         protected void drpCanton_SelectedIndexChanged(object sender, EventArgs e)
         {
             cargarDropDownListDistritos();
+        }
+
+        protected void btnCancelarPaso1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./frmPerfilEmpresa.aspx");
+        }
+
+        protected void btnCancelarPaso2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./frmEditarPerfilEmpresa.aspx");
         }
     }
 }

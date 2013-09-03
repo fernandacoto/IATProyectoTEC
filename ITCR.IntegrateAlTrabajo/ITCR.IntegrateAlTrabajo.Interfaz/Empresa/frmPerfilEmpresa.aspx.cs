@@ -119,6 +119,8 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             }
             Usuario.Estado = 3;
             Usuario.Actualizar();
+            Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+
         }
 
         protected void btnEditar_Click(object sender, EventArgs e)

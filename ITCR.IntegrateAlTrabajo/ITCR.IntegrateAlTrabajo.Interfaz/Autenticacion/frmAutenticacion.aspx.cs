@@ -64,9 +64,9 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Autenticacion
                     }
                     else
                     {
+                        Session["Nombre_Usuario"] = txtNombreUsuario.Text;
                         if (TipoUsuario == 1)
                         {
-                            Session["Nombre_Usuario"] = txtNombreUsuario.Text;
                             Response.Redirect("/AdultoMayor/frmConsultarPerfilAdultoMayor.aspx");
                         }
                         else if (TipoUsuario == 2)
