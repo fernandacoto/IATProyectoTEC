@@ -81,70 +81,6 @@
         <tr>
             <td class="style9">
                 &nbsp;</td>
-            <td class="style5">
-                &nbsp;</td>
-            <td class="style6">
-                &nbsp;</td>
-            <td class="style7">
-                &nbsp;</td>
-            <td class="style5">
-                &nbsp;</td>
-            <td class="style6">
-                &nbsp;</td>
-            <td class="style9">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style9">
-                &nbsp;</td>
-            <td class="style5" colspan="5">
-                <asp:Panel ID="Panel1" runat="server" Height="234px">
-                    <asp:DataGrid ID="dgServicios" runat="server" AutoGenerateColumns="False" 
-                                            BackColor="WhiteSmoke" 
-    BorderStyle="Solid" CssClass="GridMantenimiento" 
-                                            Font-Names="Verdana" Font-Size="Smaller" 
-                        ForeColor="Black" Height="19px" 
-                                            Width="100%" 
-                        ondeletecommand="dgServicios_DeleteCommand" 
-                        onitemcommand="dgServicios_ItemCommand">
-                        <AlternatingItemStyle BackColor="Gainsboro" />
-                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
-                                                Font-Size="Larger" ForeColor="White" 
-                            HorizontalAlign="Center" />
-                        <Columns>
-                            <asp:BoundColumn HeaderText="Id" DataField="Id_Servicio" Visible="False">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Nombre" DataField="Nom_Servicio"></asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Descripción" DataField="Descripcion">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn DataField="FK_IdCategoriaServicio" HeaderText="Categoría">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn DataField="FK_IdTipoServicio" HeaderText="Tipo">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Horario"></asp:BoundColumn>
-                            <asp:TemplateColumn HeaderText="Editar">
-                                <ItemTemplate>
-                                    <asp:ImageButton ID="ibtnEditar" runat="server" CommandName="Editar" 
-                                        ImageUrl="~/Multimedia/icono-editar.jpg" Height="30px" Width="30px" />
-                                </ItemTemplate>
-                            </asp:TemplateColumn>
-                            <asp:TemplateColumn HeaderText="Eliminar">
-                                <ItemTemplate>
-                                    <asp:ImageButton ID="ibtnEliminar" runat="server" CommandName="Eliminar" 
-                                        Height="24px" ImageUrl="~/Multimedia/icono-eliminar.jpg" 
-                                        Width="23px" />
-                                </ItemTemplate>
-                            </asp:TemplateColumn>
-                        </Columns>
-                    </asp:DataGrid>
-                </asp:Panel>
-            </td>
-            <td class="style9">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style9">
-                &nbsp;</td>
             <td class="style5" colspan="5">
                 <asp:ValidationSummary ID="vsOfrecerServicios" runat="server" 
                     ForeColor="#CC0000" ValidationGroup="gvServicios" />
@@ -162,7 +98,7 @@
                                             <tr>
                                                 <td class="style26">
                                                     <asp:Label ID="lblNombre" runat="server" Text="Nombre"></asp:Label>
-                                                </td>
+                                                    &nbsp;del servicio</td>
                                                 <td class="style27">
                                                     <asp:TextBox ID="txtNombreServicios" runat="server" Enabled="False"></asp:TextBox>
                                                     <asp:RequiredFieldValidator ID="rfvNombreServicio" runat="server" 
@@ -184,7 +120,7 @@
                                             <tr>
                                                 <td class="style26">
                                                     <asp:Label ID="lblTipo" runat="server" Text="Tipo"></asp:Label>
-                                                </td>
+                                                    &nbsp;de servicio</td>
                                                 <td class="style27">
                                                     <asp:DropDownList ID="drpTipoServicio" runat="server" Height="30px" 
                                                         Width="121px" Enabled="False">
@@ -335,16 +271,48 @@
         <tr>
             <td class="style9">
                 &nbsp;</td>
-            <td class="style5">
-                &nbsp;</td>
-            <td class="style6">
-                &nbsp;</td>
-            <td class="style7">
-                &nbsp;</td>
-            <td class="style5">
-                &nbsp;</td>
-            <td class="style6">
-                &nbsp;</td>
+            <td class="style5" colspan="5">
+                <asp:Panel ID="Panel2" runat="server" Height="258px">
+                    <asp:DataGrid ID="dgServicios" runat="server" AutoGenerateColumns="False" 
+                                            BackColor="WhiteSmoke" 
+    BorderStyle="Solid" CssClass="GridMantenimiento" 
+                                            Font-Names="Verdana" Font-Size="Smaller" 
+                        ForeColor="Black" Height="19px" 
+                                            Width="100%" 
+                        ondeletecommand="dgServicios_DeleteCommand" 
+                        onitemcommand="dgServicios_ItemCommand">
+                        <AlternatingItemStyle BackColor="Gainsboro" />
+                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                                                Font-Size="Larger" ForeColor="White" 
+                            HorizontalAlign="Center" />
+                        <Columns>
+                            <asp:BoundColumn HeaderText="Id" DataField="Id_Servicio" Visible="False">
+                            </asp:BoundColumn>
+                            <asp:BoundColumn HeaderText="Nombre" DataField="Nom_Servicio"></asp:BoundColumn>
+                            <asp:BoundColumn HeaderText="Descripción" DataField="Descripcion">
+                            </asp:BoundColumn>
+                            <asp:BoundColumn DataField="FK_IdCategoriaServicio" HeaderText="Categoría">
+                            </asp:BoundColumn>
+                            <asp:BoundColumn DataField="FK_IdTipoServicio" HeaderText="Tipo">
+                            </asp:BoundColumn>
+                            <asp:BoundColumn HeaderText="Horario"></asp:BoundColumn>
+                            <asp:TemplateColumn HeaderText="Editar">
+                                <ItemTemplate>
+                                    <asp:ImageButton ID="ibtnEditar" runat="server" CommandName="Editar" 
+                                        ImageUrl="~/Multimedia/icono-editar.jpg" Height="30px" Width="30px" />
+                                </ItemTemplate>
+                            </asp:TemplateColumn>
+                            <asp:TemplateColumn HeaderText="Eliminar">
+                                <ItemTemplate>
+                                    <asp:ImageButton ID="ibtnEliminar" runat="server" CommandName="Eliminar" 
+                                        Height="24px" ImageUrl="~/Multimedia/icono-eliminar.jpg" 
+                                        Width="23px" />
+                                </ItemTemplate>
+                            </asp:TemplateColumn>
+                        </Columns>
+                    </asp:DataGrid>
+                </asp:Panel>
+            </td>
             <td class="style9">
                 &nbsp;</td>
         </tr>
