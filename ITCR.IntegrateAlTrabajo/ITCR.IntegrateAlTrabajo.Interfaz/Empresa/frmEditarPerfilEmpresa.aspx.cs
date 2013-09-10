@@ -178,8 +178,10 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
                 Empresa.Nom_Empresa = txtNombreE.Text;
                 Empresa.Num_CedulaJuridica = txtCedulaE.Text;
                 Empresa.Dsc_Empresa = txtDscE.Text;
+                CorreoElectronico.FK_IdUsuario = IdUsuario;
                 CorreoElectronico.Detalle = txtEmail.Text;
                 CorreoElectronico.FK_IdTipoContacto = 3;
+                Telefono.FK_IdUsuario = IdUsuario;
                 Telefono.Detalle = txtTelefono.Text;
                 Telefono.FK_IdTipoContacto = 1;
                 Empresa.FK_IdDistrito = Int16.Parse(drpDistrito.SelectedValue);
