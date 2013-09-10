@@ -31,3 +31,7 @@ C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTr
 C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
 C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
 C:\Users\Jon\Documents\IATProyectoTEC\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+E:\Satcha\Desktop\Integrate al trabajo - Proyecto\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+E:\Satcha\Desktop\Integrate al trabajo - Proyecto\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+E:\Satcha\Desktop\Integrate al trabajo - Proyecto\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+E:\Satcha\Desktop\Integrate al trabajo - Proyecto\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb

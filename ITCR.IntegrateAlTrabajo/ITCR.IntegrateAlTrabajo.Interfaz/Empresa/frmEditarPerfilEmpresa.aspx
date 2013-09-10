@@ -154,7 +154,7 @@
                                                 <asp:Label ID="lblCedulaJuridica" runat="server" Text="Cédula Jurídica"></asp:Label>
                                             </td>
                                             <td class="style14">
-                                                <asp:TextBox ID="txtCedulaE" runat="server" Width="177px"></asp:TextBox>
+                                                <asp:TextBox ID="txtCedulaE" runat="server" Width="177px" TextMode="Number"></asp:TextBox>
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCedulaE"
                                                 ErrorMessage="La cédula jurídica de la empresa es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosGenerales">*</asp:RequiredFieldValidator>
                                             </td>
@@ -184,7 +184,7 @@
                                                 <asp:Label ID="lblTelefono" runat="server" Text="Teléfono"></asp:Label>
                                             </td>
                                             <td class="style14">
-                                                <asp:TextBox ID="txtTelefono" runat="server" Width="181px"></asp:TextBox>
+                                                <asp:TextBox ID="txtTelefono" runat="server" Width="181px" TextMode="Number"></asp:TextBox>
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtTelefono"
                                                 ErrorMessage="El teléfono de la empresa es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosGenerales">*</asp:RequiredFieldValidator>
                                             </td>

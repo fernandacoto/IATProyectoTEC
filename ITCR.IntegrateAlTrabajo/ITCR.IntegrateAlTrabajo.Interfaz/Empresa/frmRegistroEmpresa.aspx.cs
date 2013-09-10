@@ -114,11 +114,11 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             if (Page.IsValid)
             {
                 Usuario.Nom_Usuario = txtNombreUsuario.Text;
+                DataTable TablaNomUsuario = Usuario.Buscar();
                 Usuario.Contrasenna = txtContraseña.Text;
                 Usuario.Indicio_Contrasenna = txtIndicioContraseña.Text;
                 Usuario.FK_IdTipoUsuario = 2;
                 Usuario.Estado = 2;
-                DataTable TablaNomUsuario = Usuario.Buscar();
                 if (TablaNomUsuario.Rows.Count.Equals(0))
                 {
                     if (txtContraseña.Text.CompareTo(txtConfirmarContraseña.Text) == 0)
