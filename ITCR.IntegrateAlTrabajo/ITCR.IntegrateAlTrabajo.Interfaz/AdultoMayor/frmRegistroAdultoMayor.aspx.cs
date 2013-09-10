@@ -136,12 +136,23 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
             if (Page.IsValid)
             {
-                Usuario.Nom_Usuario = txtNombreUsuario.Text;
-                Usuario.Contrasenna = txtContraseña.Text;
-                Usuario.Indicio_Contrasenna = txtIndicioContraseña.Text;
-                Usuario.Estado = 2;
-                Usuario.FK_IdTipoUsuario = 1;
-                mvRegistroAdultoMayor.ActiveViewIndex = 2;
+                if (txtContraseña.Text.CompareTo(txtConfirmacionContraseña.Text) == 0)
+                {
+                    Usuario.Nom_Usuario = txtNombreUsuario.Text;
+                    Usuario.Contrasenna = txtContraseña.Text;
+                    Usuario.Indicio_Contrasenna = txtIndicioContraseña.Text;
+                    Usuario.Estado = 2;
+                    Usuario.FK_IdTipoUsuario = 1;
+                    mvRegistroAdultoMayor.ActiveViewIndex = 2;
+                }
+                else
+                {
+                    string script = @"<script type='text/javascript'>
+                            alert('La contraseña y confirmación de contraseña no coinciden.');
+                            </script>";
+
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "Datos de autenticación", script, false);
+                }
             }
         }
 

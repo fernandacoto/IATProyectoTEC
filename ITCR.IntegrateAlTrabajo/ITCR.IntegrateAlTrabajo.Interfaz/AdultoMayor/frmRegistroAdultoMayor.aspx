@@ -270,8 +270,7 @@
                                     <asp:Label ID="lblFechaNacimiento" runat="server" Text="Fecha de nacimiento"></asp:Label>
                                 </td>
                                 <td class="style25">
-                                    <asp:TextBox ID="txtFechaNacimiento" runat="server" TextMode="Date" 
-                                        ontextchanged="txtFechaNacimiento_TextChanged"></asp:TextBox>
+                                    <asp:TextBox ID="txtFechaNacimiento" runat="server" TextMode="Date"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="rfvFechaNacimiento" runat="server" ControlToValidate="txtFechaNacimiento"
                                     ErrorMessage="La fecha de nacimiento es un dato requerido." ForeColor="Red" ValidationGroup="gvDatosPersonales">*</asp:RequiredFieldValidator>
                                 </td>

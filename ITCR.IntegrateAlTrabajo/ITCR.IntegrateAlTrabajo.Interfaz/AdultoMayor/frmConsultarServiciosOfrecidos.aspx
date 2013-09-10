@@ -1,5 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestraAdultoMayor.Master" AutoEventWireup="true" CodeBehind="frmConsultarServiciosOfrecidos.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor.frmConsultarServiciosOfrecidos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+
+       <script id="clientEventHandlersJS" language="javascript" type="text/javascript">
+
+           function confirmarBorradoServicio() {
+               if (confirm("¿Está seguro que desea borrar el servicio? Los cambios son irreversibles.", "Confirmación de borrado") == true)
+                   return true;
+               else
+                   return false;
+           }
+    </script>
+
     <style type="text/css">
         .style3
         {
@@ -272,7 +283,7 @@
             <td class="style9">
                 &nbsp;</td>
             <td class="style5" colspan="5">
-                <asp:Panel ID="Panel2" runat="server" Height="258px">
+                <asp:Panel ID="PanelTablaDatos" runat="server" Height="258px">
                     <asp:DataGrid ID="dgServicios" runat="server" AutoGenerateColumns="False" 
                                             BackColor="WhiteSmoke" 
     BorderStyle="Solid" CssClass="GridMantenimiento" 
@@ -280,7 +291,8 @@
                         ForeColor="Black" Height="19px" 
                                             Width="100%" 
                         ondeletecommand="dgServicios_DeleteCommand" 
-                        onitemcommand="dgServicios_ItemCommand">
+                        onitemcommand="dgServicios_ItemCommand" 
+                        onitemdatabound="dgServicios_ItemDataBound">
                         <AlternatingItemStyle BackColor="Gainsboro" />
                         <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
                                                 Font-Size="Larger" ForeColor="White" 
