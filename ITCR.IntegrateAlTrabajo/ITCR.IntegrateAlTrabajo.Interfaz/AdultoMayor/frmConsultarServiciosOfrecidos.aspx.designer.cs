@@ -247,13 +247,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Button btnGuardarServicio;
         
         /// <summary>
-        /// Panel2 control.
+        /// PanelTablaDatos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
+        protected global::System.Web.UI.WebControls.Panel PanelTablaDatos;
         
         /// <summary>
         /// dgServicios control.

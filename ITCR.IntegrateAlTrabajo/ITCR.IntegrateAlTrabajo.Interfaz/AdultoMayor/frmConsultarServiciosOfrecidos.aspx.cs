@@ -87,6 +87,8 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
         protected void mostrarServicios()
         {
+            dgServicios.DataSource = "";
+            PanelTablaDatos.Visible = false;
             Usuario.Nom_Usuario = Convert.ToString(Session["Nombre_Usuario"]);
             DataTable TablaUsuario = Usuario.Buscar();
 
@@ -124,6 +126,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
                     Fila.Cells[4].Text = obtenerTiposServicios(Fila.Cells[4].Text);
                     Fila.Cells[5].Text = obtenerDiasServicios(Fila.Cells[0].Text);
                 }
+                PanelTablaDatos.Visible = true;
             }
         }
 
@@ -358,6 +361,11 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
                 //Response.Write(@"<SCRIPT LANGUAGE=""JavaScript"">alert('El servicio fue modificado exitosamente')</SCRIPT>");
             }
+        }
+
+        protected void dgServicios_ItemDataBound(object sender, DataGridItemEventArgs e)
+        {
+            e.Item.Cells[7].Attributes.Add("onClick", "return confirmarBorradoServicio();");
         }
     }
 }
