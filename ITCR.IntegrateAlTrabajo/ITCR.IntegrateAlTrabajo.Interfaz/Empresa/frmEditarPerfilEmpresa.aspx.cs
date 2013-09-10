@@ -78,6 +78,42 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             cargarDropDownListDistritos();
         }
 
+        private void cargarDireccion(Int16 IdDistrito)
+        {
+            cIATDistritoNegocios Distrito = new cIATDistritoNegocios(1, "A", 2, "B");
+
+            Distrito.Id_Distrito = IdDistrito;
+            DataTable TablaDistrito = Distrito.Buscar();
+
+            Int16 IdCanton = 0;
+
+            if (TablaDistrito.Rows.Count > 0)
+            {
+                IdCanton = Int16.Parse(TablaDistrito.Rows[0]["FK_IdCanton"].ToString());
+            }
+
+            cIATCantonNegocios Canton = new cIATCantonNegocios(1, "A", 2, "B");
+
+            Canton.Id_Canton = IdCanton;
+            DataTable TablaCanton = Canton.Buscar();
+
+            Int16 IdProvincia = 0;
+
+            if (TablaCanton.Rows.Count > 0)
+            {
+                IdProvincia = Int16.Parse(TablaCanton.Rows[0]["FK_IdProvincia"].ToString());
+            }
+
+            cIATProvinciaNegocios Provincia = new cIATProvinciaNegocios(1, "A", 2, "B");
+
+            cargarDropDownListProvincias();
+            drpProvincia.SelectedValue = IdProvincia.ToString();
+            cargarDropDownListCantones();
+            drpCanton.SelectedValue = IdCanton.ToString();
+            cargarDropDownListDistritos();
+            drpDistrito.SelectedValue = IdDistrito.ToString();
+        }
+
         public void cargar_datos_usuario()
         {
             Usuario.Nom_Usuario = Convert.ToString(Session["Nombre_Usuario"]);
@@ -95,6 +131,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
                 txtNombreE.Text = tablaEmpresa.Rows[0]["Nom_Empresa"].ToString();
                 txtCedulaE.Text = tablaEmpresa.Rows[0]["Num_CedulaJuridica"].ToString();
                 txtDscE.Text = tablaEmpresa.Rows[0]["Dsc_Empresa"].ToString();
+                cargarDireccion(Int16.Parse(tablaEmpresa.Rows[0]["Fk_IdDistrito"].ToString()));
             }
             Telefono.FK_IdUsuario = IdUsuario;
             Telefono.FK_IdTipoContacto = 1;
@@ -110,6 +147,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             {
                 txtEmail.Text = tablaEmail.Rows[0]["Detalle"].ToString();
             }
+
         }
 
 
