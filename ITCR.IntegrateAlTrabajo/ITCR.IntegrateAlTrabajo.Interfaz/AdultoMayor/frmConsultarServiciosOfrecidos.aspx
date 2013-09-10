@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="frmConsultarServiciosOfrecidos.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor.frmConsultarServiciosOfrecidos" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestraAdultoMayor.Master" AutoEventWireup="true" CodeBehind="frmConsultarServiciosOfrecidos.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor.frmConsultarServiciosOfrecidos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
         .style3
@@ -75,7 +75,7 @@
         <tr>
             <td class="style4" colspan="7">
                 <asp:Label ID="lblConsultarServicios" runat="server" 
-                    Text="Mis Servicios"></asp:Label>
+                    Text="Mis Servicios" CssClass="Titulo1"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -125,13 +125,13 @@
                             <asp:TemplateColumn HeaderText="Editar">
                                 <ItemTemplate>
                                     <asp:ImageButton ID="ibtnEditar" runat="server" CommandName="Editar" 
-                                        ImageUrl="~/Multimedia/editar.gif" />
+                                        ImageUrl="~/Multimedia/icono-editar.jpg" Height="30px" Width="30px" />
                                 </ItemTemplate>
                             </asp:TemplateColumn>
                             <asp:TemplateColumn HeaderText="Eliminar">
                                 <ItemTemplate>
                                     <asp:ImageButton ID="ibtnEliminar" runat="server" CommandName="Eliminar" 
-                                        Height="24px" ImageUrl="~/Multimedia/RTEmagicC_EliminarPag_10.png" 
+                                        Height="24px" ImageUrl="~/Multimedia/icono-eliminar.jpg" 
                                         Width="23px" />
                                 </ItemTemplate>
                             </asp:TemplateColumn>
@@ -176,7 +176,7 @@
                                                     <asp:Label ID="lblCategoria" runat="server" Text="Categoría"></asp:Label>
                                                 </td>
                                                 <td class="style11">
-                                                    <asp:DropDownList ID="drpCategoriaServicio" runat="server" Height="16px" 
+                                                    <asp:DropDownList ID="drpCategoriaServicio" runat="server" Height="30px" 
                                                         Width="121px" Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
@@ -186,7 +186,7 @@
                                                     <asp:Label ID="lblTipo" runat="server" Text="Tipo"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:DropDownList ID="drpTipoServicio" runat="server" Height="16px" 
+                                                    <asp:DropDownList ID="drpTipoServicio" runat="server" Height="30px" 
                                                         Width="121px" Enabled="False">
                                                     </asp:DropDownList>
                                                 </td>
@@ -217,7 +217,7 @@
                                                     <asp:Label ID="lblLunes" runat="server" Text="Lunes"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:DropDownList ID="drpHora1" runat="server" Enabled="False" Height="16px" 
+                                                    <asp:DropDownList ID="drpHora1" runat="server" Enabled="False" Height="30px" 
                                                         Width="121px">
                                                     </asp:DropDownList>
                                                 </td>
@@ -233,7 +233,7 @@
                                                     <asp:Label ID="lblMartes" runat="server" Text="Martes"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:DropDownList ID="drpHora2" runat="server" Enabled="False" Height="16px" 
+                                                    <asp:DropDownList ID="drpHora2" runat="server" Enabled="False" Height="30px" 
                                                         Width="121px">
                                                     </asp:DropDownList>
                                                 </td>
@@ -249,7 +249,7 @@
                                                     <asp:Label ID="lblMiercoles" runat="server" Text="Miércoles"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:DropDownList ID="drpHora3" runat="server" Enabled="False" Height="16px" 
+                                                    <asp:DropDownList ID="drpHora3" runat="server" Enabled="False" Height="30px" 
                                                         Width="121px">
                                                     </asp:DropDownList>
                                                 </td>
@@ -265,7 +265,7 @@
                                                     <asp:Label ID="lblJueves" runat="server" Text="Jueves"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:DropDownList ID="drpHora4" runat="server" Enabled="False" Height="16px" 
+                                                    <asp:DropDownList ID="drpHora4" runat="server" Enabled="False" Height="30px" 
                                                         Width="121px">
                                                     </asp:DropDownList>
                                                 </td>
@@ -281,7 +281,7 @@
                                                     <asp:Label ID="lblViernes" runat="server" Text="Viernes"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:DropDownList ID="drpHora5" runat="server" Enabled="False" Height="16px" 
+                                                    <asp:DropDownList ID="drpHora5" runat="server" Enabled="False" Height="30px" 
                                                         Width="121px">
                                                     </asp:DropDownList>
                                                 </td>
@@ -297,7 +297,7 @@
                                                     <asp:Label ID="lblSabado" runat="server" Text="Sábado"></asp:Label>
                                                 </td>
                                                 <td class="style27">
-                                                    <asp:DropDownList ID="drpHora6" runat="server" Enabled="False" Height="16px" 
+                                                    <asp:DropDownList ID="drpHora6" runat="server" Enabled="False" Height="30px" 
                                                         Width="121px">
                                                     </asp:DropDownList>
                                                 </td>
@@ -307,7 +307,7 @@
                                                     &nbsp;</td>
                                                 <td class="style11">
                                                     <asp:Button ID="btnGuardarServicio" runat="server" Enabled="False" 
-                                                        onclick="btnGuardarServicio_Click" Text="Guardar" />
+                                                        onclick="btnGuardarServicio_Click" Text="Guardar" CssClass="Boton" />
                                                 </td>
                                             </tr>
                                         </table>
