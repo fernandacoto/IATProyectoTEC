@@ -63,7 +63,8 @@
     <Content Include="AdultoMayor\frmOfrecerServicios.aspx" />
     <Content Include="AdultoMayor\frmRegistroAdultoMayor.aspx" />
     <Content Include="Autenticacion\frmAutenticacion.aspx" />
-    <Content Include="Empresa\FiltrarServicios.aspx" />
+    <Content Include="Empresa\frmPerfilAdultoMayor.aspx" />
+    <Content Include="Empresa\frmFiltrarServicios.aspx" />
     <Content Include="Empresa\frmEditarPerfilEmpresa.aspx" />
     <Content Include="Empresa\frmPerfilEmpresa.aspx" />
     <Content Include="Empresa\frmRegistroEmpresa.aspx" />
@@ -186,12 +187,19 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Empresa\FiltrarServicios.aspx.cs">
-      <DependentUpon>FiltrarServicios.aspx</DependentUpon>
+    <Compile Include="Empresa\frmPerfilAdultoMayor.aspx.cs">
+      <DependentUpon>frmPerfilAdultoMayor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Empresa\FiltrarServicios.aspx.designer.cs">
-      <DependentUpon>FiltrarServicios.aspx</DependentUpon>
+    <Compile Include="Empresa\frmPerfilAdultoMayor.aspx.designer.cs">
+      <DependentUpon>frmPerfilAdultoMayor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa\frmFiltrarServicios.aspx.cs">
+      <DependentUpon>frmFiltrarServicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empresa\frmFiltrarServicios.aspx.designer.cs">
+      <DependentUpon>frmFiltrarServicios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Empresa\frmEditarPerfilEmpresa.aspx.cs">
       <DependentUpon>frmEditarPerfilEmpresa.aspx</DependentUpon>

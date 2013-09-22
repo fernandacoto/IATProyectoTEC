@@ -10,7 +10,7 @@
 namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa {
     
     
-    public partial class FiltrarServicios {
+    public partial class frmFiltrarServicios {
         
         /// <summary>
         /// Control lbl_titulo.
@@ -49,31 +49,31 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa {
         protected global::System.Web.UI.WebControls.CheckBox chk_Provincia;
         
         /// <summary>
-        /// Control ddl_Tipo.
+        /// Control drpTipo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddl_Tipo;
+        protected global::System.Web.UI.WebControls.DropDownList drpTipo;
         
         /// <summary>
-        /// Control ddl_Categoria.
+        /// Control drpCategoria.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddl_Categoria;
+        protected global::System.Web.UI.WebControls.DropDownList drpCategoria;
         
         /// <summary>
-        /// Control ddl_provincia.
+        /// Control drpprovincia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddl_provincia;
+        protected global::System.Web.UI.WebControls.DropDownList drpprovincia;
         
         /// <summary>
         /// Control btn_buscar.

@@ -311,7 +311,8 @@
                             <asp:TemplateColumn HeaderText="Editar">
                                 <ItemTemplate>
                                     <asp:ImageButton ID="ibtnEditar" runat="server" CommandName="Editar" 
-                                        ImageUrl="~/Multimedia/icono-editar.jpg" Height="30px" Width="30px" />
+                                        ImageUrl="~/Multimedia/icono-editar.jpg" Height="30px" Width="30px" 
+                                        onclick="ibtnEditar_Click" />
                                 </ItemTemplate>
                             </asp:TemplateColumn>
                             <asp:TemplateColumn HeaderText="Eliminar">
