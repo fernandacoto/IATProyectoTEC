@@ -580,3 +580,8 @@ EXEC dbo.pr_IATTipoTrabajo_Insertar "Remunerado", NULL, NULL;
 EXEC dbo.pr_IATTipoUsuario_Insertar "Adulto Mayor", NULL, NULL;
 EXEC dbo.pr_IATTipoUsuario_Insertar "Empresa", NULL, NULL;
 EXEC dbo.pr_IATTipoUsuario_Insertar "Administrador", NULL, NULL;
+
+EXEC dbo.pr_IATCategoriaTrabajo_Insertar "Administración", NULL, NULL;
+EXEC dbo.pr_IATCategoriaTrabajo_Insertar "Ingeniería", NULL, NULL;
+EXEC dbo.pr_IATCategoriaTrabajo_Insertar "Educación", NULL, NULL;
+EXEC dbo.pr_IATCategoriaTrabajo_Insertar "Salud", NULL, NULL;
