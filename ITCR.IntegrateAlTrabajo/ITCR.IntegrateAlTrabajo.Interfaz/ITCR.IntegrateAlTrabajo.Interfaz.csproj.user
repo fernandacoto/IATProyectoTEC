@@ -4,7 +4,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
+<<<<<<< HEAD
           <StartPageUrl>Administrador/frmCambiarEstadoPerfil.aspx</StartPageUrl>
+=======
+          <StartPageUrl>Empresa/frmFiltrarServicios.aspx</StartPageUrl>
+>>>>>>> 3f4c678f839e89500144c635818526d2b6e0d02b
           <StartAction>SpecificPage</StartAction>
           <AspNetDebugging>True</AspNetDebugging>
           <SilverlightDebugging>False</SilverlightDebugging>

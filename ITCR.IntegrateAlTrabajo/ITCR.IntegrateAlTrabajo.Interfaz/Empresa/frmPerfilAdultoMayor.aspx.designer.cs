@@ -7,37 +7,37 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
+namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa {
     
     
-    public partial class frmConsultarServiciosOfrecidos {
+    public partial class frmPerfilAdultoMayor {
         
         /// <summary>
-        /// Control lblConsultarServicios.
+        /// Control lblMiPerfil.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblConsultarServicios;
+        protected global::System.Web.UI.WebControls.Label lblMiPerfil;
         
         /// <summary>
-        /// Control vsOfrecerServicios.
+        /// Control PanelDatosPersonales.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary vsOfrecerServicios;
+        protected global::System.Web.UI.WebControls.Panel PanelDatosPersonales;
         
         /// <summary>
-        /// Control PanelIngresoDatos.
+        /// Control lblDatosPersonales.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelIngresoDatos;
+        protected global::System.Web.UI.WebControls.Label lblDatosPersonales;
         
         /// <summary>
         /// Control lblNombre.
@@ -49,219 +49,327 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblNombre;
         
         /// <summary>
-        /// Control txtNombreServicios.
+        /// Control lblNombreDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombreServicios;
+        protected global::System.Web.UI.WebControls.Label lblNombreDato;
         
         /// <summary>
-        /// Control rfvNombreServicio.
+        /// Control lblTelefonoCelular.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombreServicio;
+        protected global::System.Web.UI.WebControls.Label lblTelefonoCelular;
         
         /// <summary>
-        /// Control lblCategoria.
+        /// Control lblTelefonoCelularDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCategoria;
+        protected global::System.Web.UI.WebControls.Label lblTelefonoCelularDato;
         
         /// <summary>
-        /// Control drpCategoriaServicio.
+        /// Control lblApellido1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpCategoriaServicio;
+        protected global::System.Web.UI.WebControls.Label lblApellido1;
         
         /// <summary>
-        /// Control lblTipo.
+        /// Control lblApellido1Dato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTipo;
+        protected global::System.Web.UI.WebControls.Label lblApellido1Dato;
         
         /// <summary>
-        /// Control drpTipoServicio.
+        /// Control lblCorreoElectronico.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpTipoServicio;
+        protected global::System.Web.UI.WebControls.Label lblCorreoElectronico;
         
         /// <summary>
-        /// Control lblDescripcion.
+        /// Control lblCorreoElectronicoDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescripcion;
+        protected global::System.Web.UI.WebControls.Label lblCorreoElectronicoDato;
         
         /// <summary>
-        /// Control txtDescripcionServicios.
+        /// Control lblApellido2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescripcionServicios;
+        protected global::System.Web.UI.WebControls.Label lblApellido2;
         
         /// <summary>
-        /// Control lblDias.
+        /// Control lblApellido2Dato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDias;
+        protected global::System.Web.UI.WebControls.Label lblApellido2Dato;
         
         /// <summary>
-        /// Control lblLunes.
+        /// Control lblProvincia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLunes;
+        protected global::System.Web.UI.WebControls.Label lblProvincia;
         
         /// <summary>
-        /// Control drpHora1.
+        /// Control lblProvinciaDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora1;
+        protected global::System.Web.UI.WebControls.Label lblProvinciaDato;
         
         /// <summary>
-        /// Control lblMartes.
+        /// Control lblSexo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMartes;
+        protected global::System.Web.UI.WebControls.Label lblSexo;
         
         /// <summary>
-        /// Control drpHora2.
+        /// Control lblSexoDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora2;
+        protected global::System.Web.UI.WebControls.Label lblSexoDato;
         
         /// <summary>
-        /// Control lblMiercoles.
+        /// Control lblCanton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMiercoles;
+        protected global::System.Web.UI.WebControls.Label lblCanton;
         
         /// <summary>
-        /// Control drpHora3.
+        /// Control lblCantonDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora3;
+        protected global::System.Web.UI.WebControls.Label lblCantonDato;
         
         /// <summary>
-        /// Control lblJueves.
+        /// Control lblCedula.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblJueves;
+        protected global::System.Web.UI.WebControls.Label lblCedula;
         
         /// <summary>
-        /// Control drpHora4.
+        /// Control lblCedulaDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora4;
+        protected global::System.Web.UI.WebControls.Label lblCedulaDato;
         
         /// <summary>
-        /// Control lblViernes.
+        /// Control lblDistrito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblViernes;
+        protected global::System.Web.UI.WebControls.Label lblDistrito;
         
         /// <summary>
-        /// Control drpHora5.
+        /// Control lblDistritoDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora5;
+        protected global::System.Web.UI.WebControls.Label lblDistritoDato;
         
         /// <summary>
-        /// Control lblSabado.
+        /// Control lblFechaNacimiento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSabado;
+        protected global::System.Web.UI.WebControls.Label lblFechaNacimiento;
         
         /// <summary>
-        /// Control drpHora6.
+        /// Control lblFechaNacimientoDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpHora6;
+        protected global::System.Web.UI.WebControls.Label lblFechaNacimientoDato;
         
         /// <summary>
-        /// Control btnGuardarServicio.
+        /// Control lblTelefonoHabitacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGuardarServicio;
+        protected global::System.Web.UI.WebControls.Label lblTelefonoHabitacion;
         
         /// <summary>
-        /// Control PanelTablaDatos.
+        /// Control lblTelefonoHabitacionDato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelTablaDatos;
+        protected global::System.Web.UI.WebControls.Label lblTelefonoHabitacionDato;
         
         /// <summary>
-        /// Control dgServicios.
+        /// Control PanelEstudios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid dgServicios;
+        protected global::System.Web.UI.WebControls.Panel PanelEstudios;
+        
+        /// <summary>
+        /// Control lblEstudios.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEstudios;
+        
+        /// <summary>
+        /// Control dgEstudios.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataGrid dgEstudios;
+        
+        /// <summary>
+        /// Control PanelExperienciasLaborales.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelExperienciasLaborales;
+        
+        /// <summary>
+        /// Control lblExperienciasLaborales.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblExperienciasLaborales;
+        
+        /// <summary>
+        /// Control Panel1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel1;
+        
+        /// <summary>
+        /// Control dgExperienciasLaborales.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataGrid dgExperienciasLaborales;
+        
+        /// <summary>
+        /// Control PanelOtros.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelOtros;
+        
+        /// <summary>
+        /// Control lblOtros.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOtros;
+        
+        /// <summary>
+        /// Control lblIdiomas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIdiomas;
+        
+        /// <summary>
+        /// Control lblIdiomasDato.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIdiomasDato;
+        
+        /// <summary>
+        /// Control lblPasatiempos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPasatiempos;
+        
+        /// <summary>
+        /// Control lblPasatiemposDato.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPasatiemposDato;
     }
 }
