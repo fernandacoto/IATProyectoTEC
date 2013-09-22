@@ -112,8 +112,7 @@
                                     Text="Nombre de usuario"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="txtNombreUsuario" runat="server" 
-                                    ontextchanged="txtNombreUsuario_TextChanged"></asp:TextBox>
+                                <asp:TextBox ID="txtNombreUsuario" runat="server"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
