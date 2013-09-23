@@ -97,40 +97,46 @@
             <td class="style8">
                 &nbsp;</td>
             <td class="style5" colspan="5">
-                    <asp:DataGrid ID="dgPerfilesAdultosMayores" runat="server" AutoGenerateColumns="False" 
+                    <asp:Panel ID="panelAdultosMayores" runat="server">
+                        <asp:DataGrid ID="dgPerfilesAdultosMayores" runat="server" AutoGenerateColumns="False" 
                                             BackColor="WhiteSmoke" 
     BorderStyle="Solid" CssClass="GridMantenimiento" 
                                             Font-Names="Verdana" Font-Size="Smaller" 
                         ForeColor="Black" Height="19px" 
                                             Width="100%" 
-                        ondeletecommand="dgServicios_DeleteCommand" 
-                        onitemcommand="dgServicios_ItemCommand" 
-                        onitemdatabound="dgServicios_ItemDataBound">
-                        <AlternatingItemStyle BackColor="Gainsboro" />
-                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                            onitemcommand="dgPerfilesAdultosMayores_ItemCommand">
+                            <AlternatingItemStyle BackColor="Gainsboro" />
+                            <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
                                                 Font-Size="Larger" ForeColor="White" 
                             HorizontalAlign="Center" />
-                        <Columns>
-                            <asp:BoundColumn HeaderText="Id" DataField="Id_Servicio" Visible="False">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Nombre" DataField="Nom_Persona"></asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Apellido 1" DataField="Apellido1">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn DataField="Apellido2" HeaderText="Apellido 2">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn DataField="Num_Cedula" HeaderText="Cédula">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Teléfono"></asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Correo"></asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Provincia"></asp:BoundColumn>
-                            <asp:TemplateColumn HeaderText="Estado">
-                                <ItemTemplate>
-                                    <asp:DropDownList ID="drpEstado" runat="server" Width="250px">
-                                    </asp:DropDownList>
-                                </ItemTemplate>
-                            </asp:TemplateColumn>
-                        </Columns>
-                    </asp:DataGrid>
+                            <Columns>
+                                <asp:BoundColumn HeaderText="Id Usuario" DataField="FK_IdUsuario" 
+                                    Visible="False"></asp:BoundColumn>
+                                <asp:BoundColumn DataField="Id_Persona" HeaderText="Id Persona" Visible="False">
+                                </asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Nombre" DataField="Nom_Persona"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Apellido 1" DataField="Apellido1">
+                                </asp:BoundColumn>
+                                <asp:BoundColumn DataField="Apellido2" HeaderText="Apellido 2">
+                                </asp:BoundColumn>
+                                <asp:BoundColumn DataField="Num_Cedula" HeaderText="Cédula"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Teléfono"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Correo"></asp:BoundColumn>
+                                <asp:TemplateColumn HeaderText="Estado">
+                                    <ItemTemplate>
+                                        <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Center">
+                                            <asp:DropDownList ID="drpEstado" runat="server" Width="250px">
+                                            </asp:DropDownList>
+                                        </asp:Panel>
+                                    </ItemTemplate>
+                                </asp:TemplateColumn>
+                                <asp:BoundColumn HeaderText="Nom_Usuario" Visible="False"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Contraseña" Visible="False"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Indicio" Visible="False"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Tipo Usuario" Visible="False"></asp:BoundColumn>
+                            </Columns>
+                        </asp:DataGrid>
+                    </asp:Panel>
                 </td>
             <td class="style8">
                 &nbsp;</td>
@@ -171,38 +177,43 @@
             <td class="style8">
                 &nbsp;</td>
             <td class="style11" colspan="5">
-                    <asp:DataGrid ID="dgPerfilesEmpresas" runat="server" AutoGenerateColumns="False" 
+                    <asp:Panel ID="panelEmpresas" runat="server">
+                        <asp:DataGrid ID="dgPerfilesEmpresas" runat="server" AutoGenerateColumns="False" 
                                             BackColor="WhiteSmoke" 
     BorderStyle="Solid" CssClass="GridMantenimiento" 
                                             Font-Names="Verdana" Font-Size="Smaller" 
                         ForeColor="Black" Height="19px" 
-                                            Width="100%" 
-                        ondeletecommand="dgServicios_DeleteCommand" 
-                        onitemcommand="dgServicios_ItemCommand" 
-                        onitemdatabound="dgServicios_ItemDataBound">
-                        <AlternatingItemStyle BackColor="Gainsboro" />
-                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                                            Width="100%">
+                            <AlternatingItemStyle BackColor="Gainsboro" />
+                            <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
                                                 Font-Size="Larger" ForeColor="White" 
                             HorizontalAlign="Center" />
-                        <Columns>
-                            <asp:BoundColumn HeaderText="Id" DataField="Id_Servicio" Visible="False">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Nombre" DataField="Nom_Empresa"></asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Cédula Jurídica" DataField="Num_CedulaJuridica">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Teléfono">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Correo">
-                            </asp:BoundColumn>
-                            <asp:BoundColumn HeaderText="Provincia"></asp:BoundColumn>
-                            <asp:TemplateColumn HeaderText="Estado">
-                                <ItemTemplate>
-                                    <asp:DropDownList ID="drpEmpresas" runat="server" Width="250px">
-                                    </asp:DropDownList>
-                                </ItemTemplate>
-                            </asp:TemplateColumn>
-                        </Columns>
-                    </asp:DataGrid>
+                            <Columns>
+                                <asp:BoundColumn HeaderText="Id Usuario" DataField="FK_IdUsuario" 
+                                    Visible="False"></asp:BoundColumn>
+                                <asp:BoundColumn DataField="Id_Empresa" HeaderText="Id Empresa" Visible="False">
+                                </asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Nombre" DataField="Nom_Empresa"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Cédula Jurídica" DataField="Num_CedulaJuridica">
+                                </asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Teléfono"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Correo"></asp:BoundColumn>
+                                <asp:TemplateColumn HeaderText="Estado">
+                                    <ItemTemplate>
+                                        <asp:Panel ID="Panel2" runat="server" HorizontalAlign="Center">
+                                            <asp:DropDownList ID="drpEmpresas" runat="server" Width="250px">
+                                            </asp:DropDownList>
+                                        </asp:Panel>
+                                    </ItemTemplate>
+                                </asp:TemplateColumn>
+                                <asp:BoundColumn HeaderText="Nom_Usuario" Visible="False"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Contraseña" Visible="False"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Indicio Contraseña" Visible="False">
+                                </asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Tipo Usuario" Visible="False"></asp:BoundColumn>
+                            </Columns>
+                        </asp:DataGrid>
+                    </asp:Panel>
                 </td>
             <td class="style8">
                 &nbsp;</td>
@@ -236,9 +247,9 @@
                 &nbsp;</td>
             <td class="style6">
                                                     <asp:Button ID="btnGuardarEstado" 
-                    runat="server" Enabled="False" 
-                                                        onclick="btnGuardarServicio_Click" 
-                    Text="Actualizar" CssClass="Boton" />
+                    runat="server" 
+                                                        onclick="btnGuardarEstado_Click" 
+                    Text="Guardar" CssClass="Boton" />
                                                 </td>
             <td class="style8">
                 &nbsp;</td>
