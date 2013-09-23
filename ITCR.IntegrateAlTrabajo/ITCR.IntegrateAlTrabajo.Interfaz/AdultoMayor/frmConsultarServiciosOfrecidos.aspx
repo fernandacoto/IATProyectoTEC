@@ -151,13 +151,13 @@
                                                     <asp:Label ID="lblDias" runat="server" Text="Días"></asp:Label>
                                                     &nbsp;y horas</td>
                                                 <td class="style27">
-                                                    &nbsp;</td>
+                                                    </td>
                                                 <td class="style28">
-                                                    &nbsp;</td>
+                                                    </td>
                                                 <td class="style29">
-                                                    &nbsp;</td>
+                                                    </td>
                                                 <td class="style11">
-                                                    &nbsp;</td>
+                                                    </td>
                                             </tr>
                                             <tr>
                                                 <td class="style26">
@@ -311,7 +311,8 @@
                             <asp:TemplateColumn HeaderText="Editar">
                                 <ItemTemplate>
                                     <asp:ImageButton ID="ibtnEditar" runat="server" CommandName="Editar" 
-                                        ImageUrl="~/Multimedia/icono-editar.jpg" Height="30px" Width="30px" />
+                                        ImageUrl="~/Multimedia/icono-editar.jpg" Height="30px" Width="30px" 
+                                        onclick="ibtnEditar_Click" />
                                 </ItemTemplate>
                             </asp:TemplateColumn>
                             <asp:TemplateColumn HeaderText="Eliminar">

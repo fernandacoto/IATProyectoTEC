@@ -55,21 +55,20 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="Administrador\frmCambiarEstadoPerfil.aspx" />
     <Content Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx" />
     <Content Include="AdultoMayor\frmEditarDatosPersonalesAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmEditarEstudiosAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmEditarExperienciasLaboralesAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmOfrecerServicios.aspx" />
-    <Content Include="Empresa\frmPublicarOfertaTrabajo.aspx" />
     <Content Include="AdultoMayor\frmRegistroAdultoMayor.aspx" />
     <Content Include="Autenticacion\frmAutenticacion.aspx" />
-    <Content Include="Empresa\FiltrarServicios.aspx" />
+    <Content Include="Empresa\frmPerfilAdultoMayor.aspx" />
+    <Content Include="Empresa\frmFiltrarServicios.aspx" />
     <Content Include="Empresa\frmEditarPerfilEmpresa.aspx" />
     <Content Include="Empresa\frmPerfilEmpresa.aspx" />
     <Content Include="Empresa\frmRegistroEmpresa.aspx" />
-    <Content Include="Multimedia\banner_adultos_mayores.jpg" />
+    <Content Include="Multimedia\banner_adultos_mayores.PNG" />
     <Content Include="Multimedia\banner_autenticacion.jpg" />
     <Content Include="Multimedia\icono-buscar.jpg" />
     <Content Include="Multimedia\icono-editar.jpg" />
@@ -125,13 +124,6 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administrador\frmCambiarEstadoPerfil.aspx.cs">
-      <DependentUpon>frmCambiarEstadoPerfil.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administrador\frmCambiarEstadoPerfil.aspx.designer.cs">
-      <DependentUpon>frmCambiarEstadoPerfil.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx.cs">
       <DependentUpon>frmConsultarPerfilAdultoMayor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -174,13 +166,6 @@
     <Compile Include="AdultoMayor\frmOfrecerServicios.aspx.designer.cs">
       <DependentUpon>frmOfrecerServicios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Empresa\frmPublicarOfertaTrabajo.aspx.cs">
-      <DependentUpon>frmPublicarOfertaTrabajo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Empresa\frmPublicarOfertaTrabajo.aspx.designer.cs">
-      <DependentUpon>frmPublicarOfertaTrabajo.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AdultoMayor\frmRegistroAdultoMayor.aspx.cs">
       <DependentUpon>frmRegistroAdultoMayor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -202,12 +187,19 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Empresa\FiltrarServicios.aspx.cs">
-      <DependentUpon>FiltrarServicios.aspx</DependentUpon>
+    <Compile Include="Empresa\frmPerfilAdultoMayor.aspx.cs">
+      <DependentUpon>frmPerfilAdultoMayor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Empresa\FiltrarServicios.aspx.designer.cs">
-      <DependentUpon>FiltrarServicios.aspx</DependentUpon>
+    <Compile Include="Empresa\frmPerfilAdultoMayor.aspx.designer.cs">
+      <DependentUpon>frmPerfilAdultoMayor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa\frmFiltrarServicios.aspx.cs">
+      <DependentUpon>frmFiltrarServicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empresa\frmFiltrarServicios.aspx.designer.cs">
+      <DependentUpon>frmFiltrarServicios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Empresa\frmEditarPerfilEmpresa.aspx.cs">
       <DependentUpon>frmEditarPerfilEmpresa.aspx</DependentUpon>
@@ -232,13 +224,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="PaginaMaestraAdministrador.Master.cs">
-      <DependentUpon>PaginaMaestraAdministrador.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PaginaMaestraAdministrador.Master.designer.cs">
-      <DependentUpon>PaginaMaestraAdministrador.Master</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestraAdultoMayor.Master.cs">
       <DependentUpon>PaginaMaestraAdultoMayor.Master</DependentUpon>
@@ -285,9 +270,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PaginaMaestraEmpresa.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="PaginaMaestraAdministrador.Master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

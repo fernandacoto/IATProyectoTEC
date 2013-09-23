@@ -367,5 +367,6 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         {
             e.Item.Cells[7].Attributes.Add("onClick", "return confirmarBorradoServicio();");
         }
+
     }
 }
