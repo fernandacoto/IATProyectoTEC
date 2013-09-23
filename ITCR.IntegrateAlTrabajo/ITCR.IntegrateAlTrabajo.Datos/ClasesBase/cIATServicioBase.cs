@@ -24,7 +24,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 	public class cIATServicioBase : cBDInteraccionBase
 	{
 		#region Declaraciones de miembros de la clase
-			private SqlInt32		_fK_IdCategoriaServicio, _fK_IdCategoriaServicioOld, _fK_IdTipoServicio, _fK_IdTipoServicioOld, _fK_IdPersona, _fK_IdPersonaOld, _id_Servicio;
+            private SqlInt32 _fK_IdCategoriaServicio, _fK_IdCategoriaServicioOld, _fK_IdTipoServicio, _fK_IdTipoServicioOld, _fK_IdPersona, _fK_IdPersonaOld, _id_Servicio, _id_Provincia, _id_TipoServicio, _id_CategoriaServicio;
 			private SqlString		_descripcion, _nom_Servicio;
 		#endregion
 
@@ -1162,6 +1162,80 @@ namespace ITCR.IntegrateAlTrabajo.Base
 			}
 		}
 
+        /// <summary>
+        /// Propósito: Método de busqueda de funcionalidad Filtrar servicios. Este método hace una busqueda de acuerdo a los filtros
+        /// </summary>
+        /// <returns>DataTable si tuvo éxito, sino genera una Exception. </returns>
+        /// <remarks>
+        /// Propiedades necesarias para este método: 
+        /// <UL>
+        ///		 <LI>Id_TipoServicio</LI>
+        ///		 <LI>Id_CategoriaServicio</LI>
+        ///		 <LI>Id_Privincia</LI>
+        /// </UL>
+        /// Propiedades actualizadas luego de una llamada exitosa a este método: 
+        /// <UL>
+        ///		 <LI>CodError</LI>
+        /// </UL>
+        /// </remarks>
+        public DataTable Buscar_por_Filtrado()
+        {
+            SqlCommand cmdAEjecutar = new SqlCommand();
+            cmdAEjecutar.CommandText = "dbo.[pr_IATFiltrarServicios]";
+            cmdAEjecutar.CommandType = CommandType.StoredProcedure;
+            DataTable toReturn = new DataTable("IATFiltro");
+            SqlDataAdapter adapter = new SqlDataAdapter(cmdAEjecutar);
+
+            // Usar el objeto conexión de la clase base
+            cmdAEjecutar.Connection = _conexionBD;
+
+            try
+            {
+                cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_Provincia", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _id_Provincia));
+                cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_TipoServicio", SqlDbType.Int, 4, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _id_TipoServicio));
+                cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_CategoriaServicio", SqlDbType.Int, 4, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _id_CategoriaServicio));
+                cmdAEjecutar.Parameters.Add(new SqlParameter("@iCod_Error", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
+                if (_conexionBDEsCreadaLocal)
+                {
+                    // Abre una conexión.
+                    _conexionBD.Open();
+                }
+                else
+                {
+                    if (_conexionBDProvider.IsTransactionPending)
+                    {
+                        cmdAEjecutar.Transaction = _conexionBDProvider.CurrentTransaction;
+                    }
+                }
+
+                // Ejecuta la consulta.
+                adapter.Fill(toReturn);
+                _codError = Int32.Parse(cmdAEjecutar.Parameters["@iCod_Error"].Value.ToString());
+
+                if (_codError != (int)ITCRError.AllOk)
+                {
+                    // Genera un error.
+                    throw new Exception("Procedimiento Almacenado 'pr_IATBuscar_por_Filtrado' reportó el error Código: " + _codError);
+                }
+
+                return toReturn;
+            }
+            catch (Exception ex)
+            {
+                // Ocurrió un error. le hace Bubble a quien llama y encapsula el objeto Exception
+                throw new Exception("cIATServicioBase::Buscar::Ocurrió un error." + ex.Message, ex);
+            }
+            finally
+            {
+                if (_conexionBDEsCreadaLocal)
+                {
+                    // Cierra la conexión.
+                    _conexionBD.Close();
+                }
+                cmdAEjecutar.Dispose();
+                adapter.Dispose();
+            }
+        }
 
 		#region Declaraciones de propiedades de la clase
 		public SqlInt32 Id_Servicio
@@ -1318,6 +1392,58 @@ namespace ITCR.IntegrateAlTrabajo.Base
 				_fK_IdPersonaOld = value;
 			}
 		}
+        /// <summary>
+        /// //
+        /// </summary>
+        public SqlInt32 id_Provincia
+        {
+            get
+            {
+                return _id_Provincia;
+            }
+            set
+            {
+                SqlInt32 id_ProvinciaTmp = (SqlInt32)value;
+                if (id_ProvinciaTmp.IsNull)
+                {
+                    throw new ArgumentOutOfRangeException("FK_IdCategoriaServicioOld", "FK_IdCategoriaServicioOld can't be NULL");
+                }
+                _id_Provincia = value;
+            }
+        }
+        public SqlInt32 id_TipoServicio
+        {
+            get
+            {
+                return _id_TipoServicio;
+            }
+            set
+            {
+                SqlInt32 id_TipoServicioTmp = (SqlInt32)value;
+                if (id_TipoServicioTmp.IsNull)
+                {
+                    throw new ArgumentOutOfRangeException("FK_IdCategoriaServicioOld", "FK_IdCategoriaServicioOld can't be NULL");
+                }
+                _id_TipoServicio = value;
+            }
+        }
+
+        public SqlInt32 id_CategoriaServicio
+        {
+            get
+            {
+                return _id_CategoriaServicio;
+            }
+            set
+            {
+                SqlInt32 id_CategoriaServicioTmp = (SqlInt32)value;
+                if (id_CategoriaServicioTmp.IsNull)
+                {
+                    throw new ArgumentOutOfRangeException("FK_IdCategoriaServicioOld", "FK_IdCategoriaServicioOld can't be NULL");
+                }
+                _id_CategoriaServicio = value;
+            }
+        }
 		#endregion
 	}
 }

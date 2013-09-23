@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestraEmpresa.Master" AutoEventWireup="true" CodeBehind="FiltrarServicios.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.Empresa.FiltrarServicios" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestraEmpresa.Master" AutoEventWireup="true" CodeBehind="frmFiltrarServicios.aspx.cs" Inherits="ITCR.IntegrateAlTrabajo.Interfaz.Empresa.frmFiltrarServicios" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
         .style3
@@ -67,15 +67,18 @@
             <td class="style4">
                 &nbsp;</td>
             <td class="style8">
-                <asp:CheckBox ID="chk_tipo" runat="server" Text="Tipo de servicio" />
+                <asp:CheckBox ID="chk_tipo" runat="server" Text="Tipo de servicio" 
+                    AutoPostBack="True" oncheckedchanged="chk_Busqueda_CheckedChanged"/>
             </td>
             <td class="style6">
-                <asp:CheckBox ID="chk_Categoria" runat="server" Text="Categoría de servicio" />
+                <asp:CheckBox ID="chk_Categoria" runat="server" Text="Categoría de servicio" 
+                    AutoPostBack="True" oncheckedchanged="chk_Busqueda_CheckedChanged" />
             </td>
             <td class="style7">
                 &nbsp;</td>
             <td class="style5">
-                <asp:CheckBox ID="chk_Provincia" runat="server" Text="Provincia" />
+                <asp:CheckBox ID="chk_Provincia" runat="server" Text="Provincia" 
+                    AutoPostBack="True" oncheckedchanged="chk_Busqueda_CheckedChanged" />
             </td>
             <td class="style6">
                 &nbsp;</td>
@@ -86,17 +89,17 @@
             <td class="style4">
                 &nbsp;</td>
             <td class="style8">
-                <asp:DropDownList ID="ddl_Tipo" runat="server">
+                <asp:DropDownList ID="drpTipo" runat="server">
                 </asp:DropDownList>
             </td>
             <td class="style6">
-                <asp:DropDownList ID="ddl_Categoria" runat="server">
+                <asp:DropDownList ID="drpCategoria" runat="server">
                 </asp:DropDownList>
             </td>
             <td class="style7">
                 &nbsp;</td>
             <td class="style5">
-                <asp:DropDownList ID="ddl_provincia" runat="server">
+                <asp:DropDownList ID="drpprovincia" runat="server">
                 </asp:DropDownList>
             </td>
             <td class="style6">
@@ -116,7 +119,8 @@
             <td class="style5">
             </td>
             <td class="style6">
-                <asp:Button ID="btn_buscar" runat="server" Height="25px" Text="Buscar" />
+                <asp:Button ID="btn_buscar" runat="server" Height="25px" Text="Buscar" 
+                    Enabled="False" onclick="btn_buscar_Click" />
             </td>
             <td class="style4">
             </td>
@@ -172,22 +176,21 @@
                                 <asp:DataGrid ID="dgResultados" runat="server" AutoGenerateColumns="False" 
                                     BackColor="WhiteSmoke" BorderStyle="Solid" CssClass="GridMantenimiento" 
                                     Font-Names="Verdana" Font-Size="Smaller" ForeColor="Black" Height="19px" 
-                                    onselectedindexchanged="dgEstudios_SelectedIndexChanged" Width="99%">
+                                    Width="99%" onitemcommand="dgResultados_ItemCommand">
                                     <AlternatingItemStyle BackColor="Gainsboro" />
                                     <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
                                         Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                     <Columns>
-                                        <asp:BoundColumn DataField="Id_Servicio" HeaderText="Id" Visible="False">
+                                        <asp:BoundColumn DataField="FK_IdUsuario" HeaderText="Id" Visible="False">
                                         </asp:BoundColumn>
-                                        <asp:BoundColumn DataField="Nom_Servicio" HeaderText="Nombre"></asp:BoundColumn>
-                                        <asp:BoundColumn HeaderText="Primer Apellido"></asp:BoundColumn>
-                                        <asp:BoundColumn HeaderText="Teléfono"></asp:BoundColumn>
-                                        <asp:BoundColumn HeaderText="Correo electrónico"></asp:BoundColumn>
-                                        <asp:BoundColumn HeaderText="Horario"></asp:BoundColumn>
-                                        <asp:TemplateColumn>
+                                        <asp:BoundColumn DataField="Nom_Persona" HeaderText="Nombre"></asp:BoundColumn>
+                                        <asp:BoundColumn HeaderText="Primer Apellido" DataField="Apellido1"></asp:BoundColumn>
+                                        <asp:BoundColumn HeaderText="Teléfono" DataField="Detalle"></asp:BoundColumn>
+                                        <asp:TemplateColumn HeaderText="Ver Perfil">
                                             <ItemTemplate>
-                                                <asp:ImageButton ID="ImageButton1" runat="server" Height="30px" 
-                                                    ImageAlign="Right" ImageUrl="~/Multimedia/icono-buscar.jpg" />
+                                                <asp:ImageButton ID="imgbtn_verperfil" runat="server" CommandName="Perfil" 
+                                                    Height="30px" ImageAlign="Right" ImageUrl="~/Multimedia/icono-buscar.jpg" 
+                                                    />
                                             </ItemTemplate>
                                         </asp:TemplateColumn>
                                     </Columns>

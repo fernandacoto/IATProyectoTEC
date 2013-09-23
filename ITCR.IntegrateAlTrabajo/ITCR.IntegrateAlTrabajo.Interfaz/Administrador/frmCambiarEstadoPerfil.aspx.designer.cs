@@ -31,6 +31,15 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label lblAdultosMayores;
         
         /// <summary>
+        /// panelAdultosMayores control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelAdultosMayores;
+        
+        /// <summary>
         /// dgPerfilesAdultosMayores control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Administrador {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEmpresas;
+        
+        /// <summary>
+        /// panelEmpresas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelEmpresas;
         
         /// <summary>
         /// dgPerfilesEmpresas control.
