@@ -218,6 +218,7 @@
     </Compile>
     <Compile Include="Empresa\frmPublicarOfertaTrabajo.aspx.cs">
       <DependentUpon>frmPublicarOfertaTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Empresa\frmPublicarOfertaTrabajo.aspx.designer.cs">
       <DependentUpon>frmPublicarOfertaTrabajo.aspx</DependentUpon>
