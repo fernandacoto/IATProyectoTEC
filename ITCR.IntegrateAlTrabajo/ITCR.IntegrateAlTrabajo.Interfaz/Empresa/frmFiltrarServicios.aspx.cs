@@ -63,6 +63,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
         #endregion
         protected void chk_Busqueda_CheckedChanged(object sender, EventArgs e)
         {
+            
             if (chk_Provincia.Checked || chk_Categoria.Checked || chk_tipo.Checked)
             {
                 btn_buscar.Enabled = true;
@@ -71,8 +72,45 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             {
                 btn_buscar.Enabled = false;
             }
+            chk_provincia_activado(sender,e);
+            chk_tipo_activado(sender, e);
+            chk_categoria_activado(sender, e);
+
         }
 
+        protected void chk_provincia_activado(object sender, EventArgs e)
+        {
+            if (chk_Provincia.Checked)
+            {
+                drpprovincia.Enabled = true;
+            }
+            else
+            {
+                drpprovincia.Enabled = false;
+            }
+        }
+        protected void chk_tipo_activado(object sender, EventArgs e)
+        {
+            if (chk_tipo.Checked)
+            {
+                drpTipo.Enabled = true;
+            }
+            else
+            {
+                drpTipo.Enabled = false;
+            }
+        }
+        protected void chk_categoria_activado(object sender, EventArgs e)
+        {
+            if (chk_Categoria.Checked)
+            {
+                drpCategoria.Enabled = true;
+            }
+            else
+            {
+                drpCategoria.Enabled = false;
+            }
+        }
         protected void btn_buscar_Click(object sender, EventArgs e)
         {
             dgResultados.DataSource = " ";
