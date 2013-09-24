@@ -89,17 +89,17 @@
             <td class="style4">
                 &nbsp;</td>
             <td class="style8">
-                <asp:DropDownList ID="drpTipo" runat="server">
+                <asp:DropDownList ID="drpTipo" runat="server" Enabled="False">
                 </asp:DropDownList>
             </td>
             <td class="style6">
-                <asp:DropDownList ID="drpCategoria" runat="server">
+                <asp:DropDownList ID="drpCategoria" runat="server" Enabled="False">
                 </asp:DropDownList>
             </td>
             <td class="style7">
                 &nbsp;</td>
             <td class="style5">
-                <asp:DropDownList ID="drpprovincia" runat="server">
+                <asp:DropDownList ID="drpprovincia" runat="server" Enabled="False">
                 </asp:DropDownList>
             </td>
             <td class="style6">
