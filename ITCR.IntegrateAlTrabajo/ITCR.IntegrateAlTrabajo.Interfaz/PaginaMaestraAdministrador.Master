@@ -44,12 +44,10 @@
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem Text="Mi perfil" Value="Mi perfil" 
-                            NavigateUrl="~/AdultoMayor/frmConsultarPerfilAdultoMayor.aspx" 
                             Selected="True"/>
-                        <asp:MenuItem Text="Publicar noticias y artículos" Value="Ofrecer servicios" 
-                            NavigateUrl="~/AdultoMayor/frmOfrecerServicios.aspx"/>
+                        <asp:MenuItem Text="Publicar noticias y artículos" Value="Ofrecer servicios"/>
                         <asp:MenuItem Text="Activar/Desactivar perfil" Value="Mis servicios" 
-                            NavigateUrl="~/AdultoMayor/frmConsultarServiciosOfrecidos.aspx"></asp:MenuItem>
+                            NavigateUrl="~/Administrador/frmCambiarEstadoPerfil.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Publicar guía" Value="Ofertas de trabajo">
                         </asp:MenuItem>
                         <asp:MenuItem Text="Ayuda" Value="Noticias y artículos">

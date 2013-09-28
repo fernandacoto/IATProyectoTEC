@@ -149,7 +149,7 @@
                                             <tr>
                                                 <td class="style26">
                                                     <asp:Label ID="lblNombre" runat="server" Text="Nombre"></asp:Label>
-                                                </td>
+                                                    &nbsp;del servicio</td>
                                                 <td class="style27">
                                                     <asp:TextBox ID="txtNombreServicios" runat="server"></asp:TextBox>
                                                     <asp:RequiredFieldValidator ID="rfvNombreServicio" runat="server" 
@@ -171,7 +171,7 @@
                                             <tr>
                                                 <td class="style26">
                                                     <asp:Label ID="lblTipo" runat="server" Text="Tipo"></asp:Label>
-                                                </td>
+                                                    &nbsp;de servicio</td>
                                                 <td class="style27">
                                                     <asp:DropDownList ID="drpTipoServicio" runat="server" Height="30px" 
                                                         Width="121px">
