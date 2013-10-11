@@ -236,20 +236,20 @@
                                     <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
                                         Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                     <Columns>
+                                        <asp:BoundColumn DataField="Id_OfertaTrabajo" HeaderText="Id_Oferta" 
+                                            Visible="False"></asp:BoundColumn>
                                         <asp:BoundColumn DataField="Id_Empresa" HeaderText="Id" Visible="False">
                                         </asp:BoundColumn>
                                         <asp:BoundColumn DataField="Nom_Empresa" HeaderText="Empresa"></asp:BoundColumn>
                                         <asp:BoundColumn DataField="Nom_Puesto" HeaderText="Puesto">
                                         </asp:BoundColumn>
                                         <asp:BoundColumn DataField="Detalle" HeaderText="Teléfono"></asp:BoundColumn>
-                                        <asp:TemplateColumn HeaderText="Ver Perfil">
+                                        <asp:TemplateColumn HeaderText="Ver Oferta">
                                             <ItemTemplate>
                                                 <asp:ImageButton ID="imgbtn_verperfil" runat="server" CommandName="Perfil" 
                                                     Height="30px" ImageAlign="Right" ImageUrl="~/Multimedia/icono-buscar.jpg" />
                                             </ItemTemplate>
                                         </asp:TemplateColumn>
-                                        <asp:BoundColumn DataField="Id_OfertaTrabajo" HeaderText="Id_Oferta" 
-                                            Visible="False"></asp:BoundColumn>
                                     </Columns>
                                 </asp:DataGrid>
                             </td>

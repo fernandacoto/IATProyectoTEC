@@ -131,7 +131,6 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
             DataTable Filtro = busqueda.Buscar_por_Filtrado();
             if (Filtro.Rows.Count > 0)
             {
-
                 dgResultados.DataSource = Filtro;
                 dgResultados.DataBind();
                 pnl_resultados.Visible = true;
@@ -142,8 +141,8 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         {
             if (e.CommandName == "Perfil")
             {
-                //Session["Id_usuario"] = e.Item.Cells[0].Text.ToString();
-                Response.Redirect("/Autenticacion/frmAutenticacion.aspx");
+                Session["Id_Oferta"] = e.Item.Cells[0].Text.ToString();
+                Response.Redirect("/AdultoMayor/frmAplicarOfertaTrabajo.aspx");
             }
         }
 
