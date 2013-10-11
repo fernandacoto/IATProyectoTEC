@@ -241,6 +241,12 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Administrador
                 }
 
                 UsuarioEmpresaActualizar.Actualizar();
+
+                string script = @"<script type='text/javascript'>
+                            alert('Se han cambiado los estados de las cuentas.');
+                            </script>";
+
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Administrador", script, false);
             }
         }
     }

@@ -183,6 +183,9 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         protected void dgServicios_ItemCommand(object source, DataGridCommandEventArgs e)
         {
             if (e.CommandName == "Eliminar") {
+
+
+
                 cIATDiaServicioNegocios DiaEliminar = new cIATDiaServicioNegocios(1, "A", 2, "B");
                 DiaEliminar.FK_IdServicio = Int16.Parse(e.Item.Cells[0].Text.ToString());
                 DataTable TablaDias = DiaEliminar.Buscar();

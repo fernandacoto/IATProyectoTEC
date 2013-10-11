@@ -34,6 +34,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Autenticacion
                     String NombreUsuario = TablaUsuario.Rows[0]["Nom_Usuario"].ToString();
                     String Contraseña = TablaUsuario.Rows[0]["Contrasenna"].ToString();
                     Int16 TipoUsuario = Int16.Parse(TablaUsuario.Rows[0]["FK_IdTipoUsuario"].ToString());
+                    Int16 Estado = Int16.Parse(TablaUsuario.Rows[0]["Estado"].ToString());
 
                     if (NombreUsuario.CompareTo(txtNombreUsuario.Text) != 0 && Contraseña.CompareTo(txtContraseña.Text) != 0)
                     {
@@ -61,6 +62,24 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Autenticacion
 
                         ScriptManager.RegisterStartupScript(this, typeof(Page), "Autenticación", script, false);
                         txtContraseña.Focus();
+                    }
+                    else if (Estado == 2)
+                    {
+                        string script = @"<script type='text/javascript'>
+                            alert('Su cuenta aún no ha sido activada.');
+                            </script>";
+
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "Autenticación", script, false);
+                        txtNombreUsuario.Focus();
+                    }
+                    else if (Estado == 3)
+                    {
+                        string script = @"<script type='text/javascript'>
+                            alert('Su cuenta ha sido eliminada.');
+                            </script>"; 
+
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "Autenticación", script, false);
+                        txtNombreUsuario.Focus();
                     }
                     else
                     {

@@ -33,8 +33,7 @@
         }
         .style12
         {
-            width: 100px;
-        }
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -56,10 +55,20 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="style4" colspan="7">
+            <td class="style8">
+                &nbsp;</td>
+            <td class="style12" colspan="2">
                 <asp:Label ID="lblActivarDesactivarEstado" runat="server" 
                     Text="Activar/Desactivar Estado" CssClass="Titulo1"></asp:Label>
             </td>
+            <td class="style7">
+                &nbsp;</td>
+            <td class="style12">
+                &nbsp;</td>
+            <td class="style6">
+                &nbsp;</td>
+            <td class="style8">
+                &nbsp;</td>
         </tr>
         <tr>
             <td class="style8">
@@ -246,10 +255,8 @@
             <td class="style12">
                 &nbsp;</td>
             <td class="style6">
-                                                    <asp:Button ID="btnGuardarEstado" 
-                    runat="server" 
-                                                        onclick="btnGuardarEstado_Click" 
-                    Text="Guardar" CssClass="Boton" />
+                                                    <asp:Button ID="btnGuardarEstado" runat="server" Text="Guardar" 
+                                                        onclick="btnGuardarEstado_Click" />
                                                 </td>
             <td class="style8">
                 &nbsp;</td>

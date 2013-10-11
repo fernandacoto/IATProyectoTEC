@@ -56,6 +56,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Administrador\frmCambiarEstadoPerfil.aspx" />
+    <Content Include="AdultoMayor\frmAplicarOfertaTrabajo.aspx" />
     <Content Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx" />
     <Content Include="AdultoMayor\frmEditarDatosPersonalesAdultoMayor.aspx" />
@@ -82,7 +83,9 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -132,6 +135,13 @@
     </Compile>
     <Compile Include="Administrador\frmCambiarEstadoPerfil.aspx.designer.cs">
       <DependentUpon>frmCambiarEstadoPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdultoMayor\frmAplicarOfertaTrabajo.aspx.cs">
+      <DependentUpon>frmAplicarOfertaTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdultoMayor\frmAplicarOfertaTrabajo.aspx.designer.cs">
+      <DependentUpon>frmAplicarOfertaTrabajo.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx.cs">
       <DependentUpon>frmConsultarPerfilAdultoMayor.aspx</DependentUpon>
