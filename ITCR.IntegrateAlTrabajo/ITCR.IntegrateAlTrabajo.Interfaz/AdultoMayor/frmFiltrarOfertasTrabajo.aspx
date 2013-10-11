@@ -201,7 +201,8 @@
                     <table class="style3">
                         <tr>
                             <td class="style13">
-                                <asp:Label ID="lbl_resultados" runat="server" Text="Resultados de búsqueda"></asp:Label>
+                                <asp:Label ID="lbl_resultados" runat="server" Text="Resultados de búsqueda" 
+                                    Visible="False"></asp:Label>
                             </td>
                             <td class="style14">
                                 &nbsp;</td>
@@ -226,7 +227,32 @@
                         </tr>
                         <tr>
                             <td class="style13" colspan="5">
-                                &nbsp;</td>
+                                <asp:DataGrid ID="dgResultados" runat="server" AutoGenerateColumns="False" 
+                                    BackColor="WhiteSmoke" BorderStyle="Solid" CssClass="GridMantenimiento" 
+                                    Font-Names="Verdana" Font-Size="Smaller" ForeColor="Black" Height="19px" 
+                                    onitemcommand="dgResultados_ItemCommand" 
+                                     Width="99%">
+                                    <AlternatingItemStyle BackColor="Gainsboro" />
+                                    <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                                        Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
+                                    <Columns>
+                                        <asp:BoundColumn DataField="Id_Empresa" HeaderText="Id" Visible="False">
+                                        </asp:BoundColumn>
+                                        <asp:BoundColumn DataField="Nom_Empresa" HeaderText="Empresa"></asp:BoundColumn>
+                                        <asp:BoundColumn DataField="Nom_Puesto" HeaderText="Puesto">
+                                        </asp:BoundColumn>
+                                        <asp:BoundColumn DataField="Detalle" HeaderText="Teléfono"></asp:BoundColumn>
+                                        <asp:TemplateColumn HeaderText="Ver Perfil">
+                                            <ItemTemplate>
+                                                <asp:ImageButton ID="imgbtn_verperfil" runat="server" CommandName="Perfil" 
+                                                    Height="30px" ImageAlign="Right" ImageUrl="~/Multimedia/icono-buscar.jpg" />
+                                            </ItemTemplate>
+                                        </asp:TemplateColumn>
+                                        <asp:BoundColumn DataField="Id_OfertaTrabajo" HeaderText="Id_Oferta" 
+                                            Visible="False"></asp:BoundColumn>
+                                    </Columns>
+                                </asp:DataGrid>
+                            </td>
                         </tr>
                         <tr>
                             <td class="style9">
