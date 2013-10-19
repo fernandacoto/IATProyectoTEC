@@ -52,7 +52,8 @@
                         </asp:MenuItem>
                         <asp:MenuItem Text="Noticias y artículos" Value="Noticias y artículos">
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Opinar" Value="Opinar"></asp:MenuItem>
+                        <asp:MenuItem Text="Opinar" Value="Opinar" 
+                            NavigateUrl="~/Empresa/frmOpinarSobreBolsaTrabajo.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Acerca de" Value="Acerca de"></asp:MenuItem>
                         <asp:MenuItem Text="Cerrar sesión" Value="Cerrar sesión" 
                             NavigateUrl="~/Autenticacion/frmAutenticacion.aspx"></asp:MenuItem>
