@@ -143,6 +143,7 @@
     </Compile>
     <Compile Include="Administrador\frmOpinionesSobreBolsaTrabajo.aspx.cs">
       <DependentUpon>frmOpinionesSobreBolsaTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Administrador\frmOpinionesSobreBolsaTrabajo.aspx.designer.cs">
       <DependentUpon>frmOpinionesSobreBolsaTrabajo.aspx</DependentUpon>
@@ -233,6 +234,7 @@
     </Compile>
     <Compile Include="Empresa\frmOpinarSobreBolsaTrabajo.aspx.cs">
       <DependentUpon>frmOpinarSobreBolsaTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Empresa\frmOpinarSobreBolsaTrabajo.aspx.designer.cs">
       <DependentUpon>frmOpinarSobreBolsaTrabajo.aspx</DependentUpon>
