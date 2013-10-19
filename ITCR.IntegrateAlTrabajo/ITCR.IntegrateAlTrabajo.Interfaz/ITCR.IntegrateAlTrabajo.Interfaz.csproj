@@ -56,21 +56,26 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Administrador\frmCambiarEstadoPerfil.aspx" />
+    <Content Include="Administrador\frmOpinionesSobreBolsaTrabajo.aspx" />
     <Content Include="AdultoMayor\frmAplicarOfertaTrabajo.aspx" />
     <Content Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx" />
     <Content Include="AdultoMayor\frmEditarDatosPersonalesAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmEditarEstudiosAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmEditarExperienciasLaboralesAdultoMayor.aspx" />
+    <Content Include="AdultoMayor\frmFiltrarOfertasTrabajo.aspx" />
     <Content Include="AdultoMayor\frmOfrecerServicios.aspx" />
+    <Content Include="AdultoMayor\frmOpinarSobreBolsaTrabajo.aspx" />
     <Content Include="AdultoMayor\frmRegistroAdultoMayor.aspx" />
     <Content Include="Autenticacion\frmAutenticacion.aspx" />
+    <Content Include="Empresa\frmOpinarSobreBolsaTrabajo.aspx" />
     <Content Include="Empresa\frmPerfilAdultoMayor.aspx" />
     <Content Include="Empresa\frmFiltrarServicios.aspx" />
     <Content Include="Empresa\frmEditarPerfilEmpresa.aspx" />
     <Content Include="Empresa\frmPerfilEmpresa.aspx" />
     <Content Include="Empresa\frmPublicarOfertaTrabajo.aspx" />
     <Content Include="Empresa\frmRegistroEmpresa.aspx" />
+    <Content Include="Multimedia\banner_adultos_mayores.jpg" />
     <Content Include="Multimedia\banner_adultos_mayores.PNG" />
     <Content Include="Multimedia\banner_autenticacion.jpg" />
     <Content Include="Multimedia\icono-buscar.jpg" />
@@ -136,6 +141,12 @@
     <Compile Include="Administrador\frmCambiarEstadoPerfil.aspx.designer.cs">
       <DependentUpon>frmCambiarEstadoPerfil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administrador\frmOpinionesSobreBolsaTrabajo.aspx.cs">
+      <DependentUpon>frmOpinionesSobreBolsaTrabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frmOpinionesSobreBolsaTrabajo.aspx.designer.cs">
+      <DependentUpon>frmOpinionesSobreBolsaTrabajo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdultoMayor\frmAplicarOfertaTrabajo.aspx.cs">
       <DependentUpon>frmAplicarOfertaTrabajo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -178,12 +189,26 @@
     <Compile Include="AdultoMayor\frmEditarExperienciasLaboralesAdultoMayor.aspx.designer.cs">
       <DependentUpon>frmEditarExperienciasLaboralesAdultoMayor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdultoMayor\frmFiltrarOfertasTrabajo.aspx.cs">
+      <DependentUpon>frmFiltrarOfertasTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdultoMayor\frmFiltrarOfertasTrabajo.aspx.designer.cs">
+      <DependentUpon>frmFiltrarOfertasTrabajo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdultoMayor\frmOfrecerServicios.aspx.cs">
       <DependentUpon>frmOfrecerServicios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdultoMayor\frmOfrecerServicios.aspx.designer.cs">
       <DependentUpon>frmOfrecerServicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdultoMayor\frmOpinarSobreBolsaTrabajo.aspx.cs">
+      <DependentUpon>frmOpinarSobreBolsaTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdultoMayor\frmOpinarSobreBolsaTrabajo.aspx.designer.cs">
+      <DependentUpon>frmOpinarSobreBolsaTrabajo.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdultoMayor\frmRegistroAdultoMayor.aspx.cs">
       <DependentUpon>frmRegistroAdultoMayor.aspx</DependentUpon>
@@ -205,6 +230,12 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa\frmOpinarSobreBolsaTrabajo.aspx.cs">
+      <DependentUpon>frmOpinarSobreBolsaTrabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa\frmOpinarSobreBolsaTrabajo.aspx.designer.cs">
+      <DependentUpon>frmOpinarSobreBolsaTrabajo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Empresa\frmPerfilAdultoMayor.aspx.cs">
       <DependentUpon>frmPerfilAdultoMayor.aspx</DependentUpon>

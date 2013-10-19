@@ -25,7 +25,7 @@ namespace ITCR.IntegrateAlTrabajo.Base
 	{
 		#region Declaraciones de miembros de la clase
 			private SqlBoolean		_ind_Activa;
-			private SqlInt32		_fK_IdEmpresa, _fK_IdEmpresaOld, _fK_IdTipoOfertaTrabajo, _fK_IdTipoOfertaTrabajoOld, _fK_IdCategoriaOfertaTrabajo, _fK_IdCategoriaOfertaTrabajoOld, _id_OfertaTrabajo;
+			private SqlInt32		_fK_IdEmpresa, _fK_IdEmpresaOld, _fK_IdTipoOfertaTrabajo, _fK_IdTipoOfertaTrabajoOld, _fK_IdCategoriaOfertaTrabajo, _fK_IdCategoriaOfertaTrabajoOld, _id_OfertaTrabajo, _id_Provincia;
 			private SqlString		_informacionAdicional, _nom_Puesto, _txt_Requisitos, _dsc_OfertaTrabajo;
 		#endregion
 
@@ -1186,9 +1186,85 @@ namespace ITCR.IntegrateAlTrabajo.Base
 				adapter.Dispose();
 			}
 		}
+        /********************************************/
+        public DataTable Buscar_por_Filtrado()
+        {
+            SqlCommand cmdAEjecutar = new SqlCommand();
+            cmdAEjecutar.CommandText = "dbo.[pr_IATFiltrarOfertasTrabajo]";
+            cmdAEjecutar.CommandType = CommandType.StoredProcedure;
+            DataTable toReturn = new DataTable("IATFiltro");
+            SqlDataAdapter adapter = new SqlDataAdapter(cmdAEjecutar);
+
+            // Usar el objeto conexión de la clase base
+            cmdAEjecutar.Connection = _conexionBD;
+
+            try
+            {
+                cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_Provincia", SqlDbType.Int, 4, ParameterDirection.Input, false, 10, 0, "", DataRowVersion.Proposed, _id_Provincia));
+                cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_TipoTrabajo", SqlDbType.Int, 4, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _fK_IdTipoOfertaTrabajo));
+                cmdAEjecutar.Parameters.Add(new SqlParameter("@iId_CategoriaTrabajo", SqlDbType.Int, 4, ParameterDirection.Input, false, 0, 0, "", DataRowVersion.Proposed, _fK_IdCategoriaOfertaTrabajo));
+                cmdAEjecutar.Parameters.Add(new SqlParameter("@iCod_Error", SqlDbType.Int, 4, ParameterDirection.Output, true, 10, 0, "", DataRowVersion.Proposed, _codError));
+                if (_conexionBDEsCreadaLocal)
+                {
+                    // Abre una conexión.
+                    _conexionBD.Open();
+                }
+                else
+                {
+                    if (_conexionBDProvider.IsTransactionPending)
+                    {
+                        cmdAEjecutar.Transaction = _conexionBDProvider.CurrentTransaction;
+                    }
+                }
+
+                // Ejecuta la consulta.
+                adapter.Fill(toReturn);
+                _codError = Int32.Parse(cmdAEjecutar.Parameters["@iCod_Error"].Value.ToString());
+
+                if (_codError != (int)ITCRError.AllOk)
+                {
+                    // Genera un error.
+                    throw new Exception("Procedimiento Almacenado 'pr_IATBuscar_por_Filtrado' reportó el error Código: " + _codError);
+                }
+
+                return toReturn;
+            }
+            catch (Exception ex)
+            {
+                // Ocurrió un error. le hace Bubble a quien llama y encapsula el objeto Exception
+                throw new Exception("cIATOfertaTrabajoBase::Buscar::Ocurrió un error." + ex.Message, ex);
+            }
+            finally
+            {
+                if (_conexionBDEsCreadaLocal)
+                {
+                    // Cierra la conexión.
+                    _conexionBD.Close();
+                }
+                cmdAEjecutar.Dispose();
+                adapter.Dispose();
+            }
+        }
+        /*******************************************/
 
 
 		#region Declaraciones de propiedades de la clase
+        public SqlInt32 id_Provincia
+        {
+            get
+            {
+                return _id_Provincia;
+            }
+            set
+            {
+                SqlInt32 id_ProvinciaTmp = (SqlInt32)value;
+                if (id_ProvinciaTmp.IsNull)
+                {
+                    throw new ArgumentOutOfRangeException("FK_IdCategoriaServicioOld", "FK_IdCategoriaServicioOld can't be NULL");
+                }
+                _id_Provincia = value;
+            }
+        }
 		public SqlInt32 Id_OfertaTrabajo
 		{
 			get
