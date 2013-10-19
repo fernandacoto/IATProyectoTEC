@@ -127,21 +127,34 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
         protected void btnAplicarOfertaTrabajo_Click(object sender, EventArgs e)
         {
-            cIATOfertaTrabajoNegocios OfertaTrabajoActualizada = new cIATOfertaTrabajoNegocios(1, "A", 2, "B");
-            OfertaTrabajoActualizada.Id_OfertaTrabajo = Int16.Parse(Convert.ToString(Session["Id_Oferta"]));
-            OfertaTrabajoActualizada.Nom_Puesto = txtNombrePuesto.Text;
-            OfertaTrabajoActualizada.Dsc_OfertaTrabajo = txtDescripciónPuesto.Text;
-            OfertaTrabajoActualizada.Txt_Requisitos = txtRequisitosPuesto.Text;
-            OfertaTrabajoActualizada.InformacionAdicional = txtInformaciónAdicionalPuesto.Text;
-            OfertaTrabajoActualizada.Ind_Activa = false;
-            OfertaTrabajoActualizada.FK_IdCategoriaOfertaTrabajo = IdCategoria;
-            OfertaTrabajoActualizada.FK_IdTipoOfertaTrabajo = IdTipoOferta;
-            OfertaTrabajoActualizada.FK_IdEmpresa = IdEmpresa;
+            Int16 IdUsuario = 0;
 
-            OfertaTrabajoActualizada.Actualizar();
+            cIATUsuarioNegocios BuscarUsuario = new cIATUsuarioNegocios(1, "A", 2, "B");
+            BuscarUsuario.Nom_Usuario = Convert.ToString(Session["Nombre_Usuario"]);
+            DataTable TablaUsuario = BuscarUsuario.Buscar();
+            if (TablaUsuario.Rows.Count > 0)
+            {
+                IdUsuario = Int16.Parse(TablaUsuario.Rows[0]["Id_Usuario"].ToString());
+            }
+
+            Int16 IdPersona = 0;
+
+            cIATPersonaNegocios BuscarPersona = new cIATPersonaNegocios(1, "A", 2, "B");
+            BuscarPersona.FK_IdUsuario = IdUsuario;
+            DataTable TablaPersona = BuscarPersona.Buscar();
+            if (TablaPersona.Rows.Count > 0)
+            {
+                IdPersona = Int16.Parse(TablaPersona.Rows[0]["Id_Persona"].ToString());
+            }
+
+            cIATAplicantesOfertaNegocios NuevoAplicantesOferta = new cIATAplicantesOfertaNegocios(1, "A", 2, "B");
+            NuevoAplicantesOferta.FK_IdOfertaTrabajo = Int16.Parse(Convert.ToString(Session["Id_Oferta"]));
+            NuevoAplicantesOferta.FK_IdPersona = IdPersona;
+
+            NuevoAplicantesOferta.Insertar();
 
             string script = @"<script type='text/javascript'>
-                            alert('La aplicación ha sido realizada correctamente.');
+                            alert('La aplicación de la oferta de trabajo ha sido realizada correctamente.');
                             </script>";
 
             ScriptManager.RegisterStartupScript(this, typeof(Page), "Persona Adulta Mayor", script, false);
