@@ -49,15 +49,6 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.TextBox txtNombrePuesto;
         
         /// <summary>
-        /// txtDescripciónPuesto control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescripciónPuesto;
-        
-        /// <summary>
         /// txtEmpresaPuesto control.
         /// </summary>
         /// <remarks>
@@ -67,6 +58,15 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.TextBox txtEmpresaPuesto;
         
         /// <summary>
+        /// txtDescripciónPuesto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDescripciónPuesto;
+        
+        /// <summary>
         /// txtRequisitosPuesto control.
         /// </summary>
         /// <remarks>
@@ -74,15 +74,6 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRequisitosPuesto;
-        
-        /// <summary>
-        /// txtInformaciónAdicionalPuesto control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtInformaciónAdicionalPuesto;
         
         /// <summary>
         /// txtCategoríaPuesto control.
@@ -103,13 +94,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.TextBox txtTipoTrabajoPuesto;
         
         /// <summary>
-        /// txtUbicaciónPuesto control.
+        /// txtTeléfonoPuesto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUbicaciónPuesto;
+        protected global::System.Web.UI.WebControls.TextBox txtTeléfonoPuesto;
         
         /// <summary>
         /// txtCorreoElectrónicoPuesto control.
@@ -121,13 +112,22 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.TextBox txtCorreoElectrónicoPuesto;
         
         /// <summary>
-        /// txtTeléfonoPuesto control.
+        /// txtUbicaciónPuesto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTeléfonoPuesto;
+        protected global::System.Web.UI.WebControls.TextBox txtUbicaciónPuesto;
+        
+        /// <summary>
+        /// txtInformaciónAdicionalPuesto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtInformaciónAdicionalPuesto;
         
         /// <summary>
         /// btnAplicarOfertaTrabajo control.
