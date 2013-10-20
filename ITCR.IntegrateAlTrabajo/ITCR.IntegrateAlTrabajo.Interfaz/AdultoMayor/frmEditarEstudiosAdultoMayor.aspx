@@ -226,11 +226,11 @@
                                         BorderWidth="2px" Height="250px" ScrollBars="Auto">
                                     <asp:DataGrid ID="dgEstudios" runat="server" AutoGenerateColumns="False" 
                                             BackColor="WhiteSmoke" BorderStyle="Solid" CssClass="GridMantenimiento" 
-                                            Font-Names="Verdana" Font-Size="Smaller" ForeColor="Black" Height="19px" 
+                                            Font-Names="Century Gothic" Font-Size="Small" ForeColor="Black" Height="19px" 
                                             Width="99%" onitemcommand="dgEstudios_ItemCommand" 
                                         onitemdatabound="dgEstudios_ItemDataBound">
                                         <AlternatingItemStyle BackColor="Gainsboro" />
-                                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Century Gothic" 
                                                 Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                         <Columns>
                                             <asp:BoundColumn DataField="Id_Estudio" HeaderText="Id_Estudio" Visible="False">

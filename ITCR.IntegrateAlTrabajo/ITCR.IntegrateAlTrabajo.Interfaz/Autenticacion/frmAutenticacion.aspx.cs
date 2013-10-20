@@ -16,6 +16,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Autenticacion
         {
             if (!IsPostBack)
             {
+                
                 txtNombreUsuario.Focus();
             }
         }

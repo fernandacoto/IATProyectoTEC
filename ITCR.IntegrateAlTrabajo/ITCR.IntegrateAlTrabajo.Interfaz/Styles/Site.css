@@ -147,12 +147,14 @@ first child of the left and right table columns */
 
 div.hideSkiplink
 {
-    background-color:#3a4f63;
+    background-color:#292459;
     width:100%;
 }
 
 div.menu
 {
+    font-family: Century Gothic;
+    font-size:12px;
     padding: 4px 0px 4px 8px;
 }
 
@@ -166,9 +168,9 @@ div.menu ul
 
 div.menu ul li a, div.menu ul li a:visited
 {
-    background-color: #465c71;
-    border: 1px #4e667d solid;
-    color: #dde4ec;
+    background-color: #292459;
+    border: 1px #292459 solid;
+    color: white;
     display: block;
     line-height: 1.35em;
     padding: 4px 20px;
@@ -178,15 +180,15 @@ div.menu ul li a, div.menu ul li a:visited
 
 div.menu ul li a:hover
 {
-    background-color: #bfcbd6;
-    color: #465c71;
+    background-color: #005190;
+    color: white;
     text-decoration: none;
 }
 
 div.menu ul li a:active
 {
-    background-color: #465c71;
-    color: #cfdbe6;
+    background-color: #292459;
+    color: white;
     text-decoration: none;
 }
 
@@ -329,6 +331,7 @@ table
 {
     font-family:Century Gothic;
     font-size:15px;
+    text-align:justify;
 }
 
 input
@@ -338,6 +341,12 @@ input
 }
 
 select
+{
+    font-family:Century Gothic;
+    font-size:15px;
+}
+
+textarea
 {
     font-family:Century Gothic;
     font-size:15px;
@@ -353,10 +362,11 @@ select
     border:solid 1px #DEDEDE; 
     text-align:center;
     padding:5px; 
-    color:#333; 
-    width:100px; 
+    color:#005190; 
+    width:140px; 
     font-family:Century Gothic;
-    font-size:12px;
+    font-size:13px;
+    font-weight:bold;
 }
 
 .Boton:hover {

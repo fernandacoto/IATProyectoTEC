@@ -169,8 +169,8 @@
             <td class="style5">
                 &nbsp;</td>
             <td class="style6">
-                <asp:Button ID="btn_buscar" runat="server" Height="25px" Text="Buscar" 
-                    Enabled="False" onclick="btn_buscar_Click" />
+                <asp:Panel ID="PanelBotonBuscar" runat="server" HorizontalAlign="Right">
+                </asp:Panel>
             </td>
             <td class="style4">
                 &nbsp;</td>
@@ -229,11 +229,11 @@
                             <td class="style13" colspan="5">
                                 <asp:DataGrid ID="dgResultados" runat="server" AutoGenerateColumns="False" 
                                     BackColor="WhiteSmoke" BorderStyle="Solid" CssClass="GridMantenimiento" 
-                                    Font-Names="Verdana" Font-Size="Smaller" ForeColor="Black" Height="19px" 
+                                    Font-Names="Century Gothic" Font-Size="Small" ForeColor="Black" Height="19px" 
                                     onitemcommand="dgResultados_ItemCommand" 
-                                     Width="99%">
+                                     Width="99%" Font-Overline="False">
                                     <AlternatingItemStyle BackColor="Gainsboro" />
-                                    <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                                    <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Century Gothic" 
                                         Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                     <Columns>
                                         <asp:BoundColumn DataField="Id_OfertaTrabajo" HeaderText="Id_Oferta" 

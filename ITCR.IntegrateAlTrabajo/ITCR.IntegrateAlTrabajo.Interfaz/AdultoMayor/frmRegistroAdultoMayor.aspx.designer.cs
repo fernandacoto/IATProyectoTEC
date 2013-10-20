@@ -769,6 +769,15 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTituloEstudio;
         
         /// <summary>
+        /// PanelAgregar1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelAgregar1;
+        
+        /// <summary>
         /// btnAgregarEstudio control.
         /// </summary>
         /// <remarks>
@@ -992,6 +1001,15 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPuesto;
+        
+        /// <summary>
+        /// PanelAgregar2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelAgregar2;
         
         /// <summary>
         /// btnAgregarExperienciaLaboral control.

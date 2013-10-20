@@ -52,14 +52,21 @@
                         </asp:MenuItem>
                         <asp:MenuItem Text="Ayuda" Value="Noticias y artículos">
                         </asp:MenuItem>
-                        <asp:MenuItem Text="Cerrar sesión" Value="Cerrar sesión" 
-                            NavigateUrl="~/Autenticacion/frmAutenticacion.aspx"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/Administrador/frmOpinionesSobreBolsaTrabajo.aspx" 
                             Text="Opiniones" Value="Opiniones"></asp:MenuItem>
+                        <asp:MenuItem Text="Cerrar sesión" Value="Cerrar sesión" 
+                            NavigateUrl="~/Autenticacion/frmAutenticacion.aspx"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
         </div>
+
+        <div id="Div2">
+
+            <asp:Panel ID="PanelBarra2" runat="server" BackColor="#005190" Height="30px">
+            </asp:Panel>
+
+        </div> 
 
         <div class="main">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"/>

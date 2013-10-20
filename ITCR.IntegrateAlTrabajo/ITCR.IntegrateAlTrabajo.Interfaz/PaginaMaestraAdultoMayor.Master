@@ -65,6 +65,13 @@
             </div>
         </div>
 
+        <div id="Div2">
+
+            <asp:Panel ID="PanelBarra2" runat="server" BackColor="#005190" Height="30px">
+            </asp:Panel>
+
+        </div>
+
         <div class="main">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
         </div>

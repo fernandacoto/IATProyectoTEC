@@ -40,6 +40,10 @@
         {
             width: 50px;
         }
+        .style14
+        {
+            width: 25px;
+        }
     </style>
 </head>
 <body bgcolor="#cccccc">
@@ -48,7 +52,7 @@
         <tr>
             <td class="style8">
                 </td>
-            <td class="style7" bgcolor="#00499A">
+            <td class="style7" bgcolor="#005190">
                 </td>
             <td class="style8">
                 </td>
@@ -69,82 +73,115 @@
             <td class="style9">
                 &nbsp;</td>
             <td class="style3">
-                <asp:Panel ID="Panel1" runat="server" BackColor="#00499A" Height="700px" 
+
+                <asp:Panel ID="PanelBarra" runat="server" BackColor="#005190" Height="38px" 
                     Width="900px">
-                    <table class="style1">
+                </asp:Panel>
+                <asp:Panel ID="Panel1" runat="server" BackColor="White" Height="700px" 
+                    Width="900px">
+                    <table class="style1" bgcolor="White">
                         <tr>
-                            <td class="style11">
+                            <td class="style14" bgcolor="White">
                                 &nbsp;</td>
-                            <td class="style13">
+                            <td bgcolor="White" class="style11">
                                 &nbsp;</td>
-                            <td colspan="2">
+                            <td class="style13" bgcolor="White">
+                                &nbsp;</td>
+                            <td colspan="2" bgcolor="White">
+                                &nbsp;</td>
+                            <td bgcolor="White">
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="style11">
-                                <asp:Label ID="lblAcercaBolsaTrabajo" runat="server" ForeColor="White" 
-                                    Text="Acerca de la bolsa de trabajo" Font-Bold="True" Font-Size="18pt"></asp:Label>
-                            </td>
-                            <td class="style13">
+                            <td class="style14" bgcolor="White">
                                 &nbsp;</td>
-                            <td colspan="2">
-                                <asp:Label ID="lblIniciarSesion" runat="server" ForeColor="White" 
+                            <td bgcolor="White" class="style11">
+                                <asp:Label ID="lblAcercaBolsaTrabajo" runat="server" Font-Bold="True" 
+                                    Font-Size="18pt" ForeColor="#292459" Text="Acerca de la bolsa de trabajo"></asp:Label>
+                            </td>
+                            <td class="style13" bgcolor="White">
+                                &nbsp;</td>
+                            <td colspan="2" bgcolor="White">
+                                <asp:Label ID="lblIniciarSesion" runat="server" ForeColor="#292459" 
                                     Text="Iniciar sesión" Font-Bold="True" Font-Size="18pt"></asp:Label>
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="style11">
-                                &nbsp;</td>
-                            <td class="style13">
-                                &nbsp;</td>
-                            <td colspan="2">
+                            <td class = "style14" bgcolor="White">
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="style11" rowspan="5">
-                                <asp:Label ID="lblTextoAcerca" runat="server" ForeColor="White" style="text-align:justify"
+                            <td class="style14" bgcolor="White">
+                                &nbsp;</td>
+                            <td bgcolor="White" class="style11">
+                                &nbsp;</td>
+                            <td class="style13" bgcolor="White">
+                                &nbsp;</td>
+                            <td colspan="2" bgcolor="White">
+                                &nbsp;</td>
+                            <td bgcolor="White">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="style14" rowspan="5" bgcolor="White">
+                                &nbsp;</td>
+                            <td bgcolor="White" class="style11" rowspan="5">
+                                <asp:Label ID="lblTextoAcerca" runat="server" ForeColor="#005190" 
                                     Text="El proyecto a desarrollar es parte de la iniciativa “Empoderar y Emprender: las Personas Adultas Mayores Protagonistas y Agentes de Cambio”, el cual está centrado en hacer que los adultos mayores tengan un envejecimiento activo.  Este proyecto como un todo, comprende talleres y capacitaciones para los adultos mayores en los cuales se tratan diversos temas, con el fin de incidir efectivamente en un cambio en el estilo de vida de la persona adulta mayor, para que ésta alcance una mejor calidad de vida y se integre en su entorno personal, familiar y social."></asp:Label>
                             </td>
-                            <td class="style13" rowspan="5">
-                                &nbsp;</td>
-                            <td>
-                                <asp:Label ID="lblNombreUsuario" runat="server" ForeColor="White" 
-                                    Text="Nombre de usuario"></asp:Label>
+                            <td class="style13" rowspan="5" bgcolor="White">
+                                <asp:Image ID="Image1" runat="server" Height="259px" 
+                                    ImageUrl="~/Multimedia/RayaAutenticacion.PNG" style="margin-left: 16px" 
+                                    Width="16px" />
                             </td>
-                            <td>
+                            <td bgcolor="White">
+                                <asp:Label ID="lblNombreUsuario" runat="server" ForeColor="#005190" 
+                                    Text="Nombre de usuario" Font-Bold="True"></asp:Label>
+                            </td>
+                            <td bgcolor="White">
                                 <asp:TextBox ID="txtNombreUsuario" runat="server"></asp:TextBox>
                             </td>
+                            <td bgcolor="White">
+                                &nbsp;</td>
                         </tr>
                         <tr>
-                            <td>
-                                <asp:Label ID="lblContraseña" runat="server" ForeColor="White" 
-                                    Text="Contraseña"></asp:Label>
+                            <td bgcolor="White">
+                                <asp:Label ID="lblContraseña" runat="server" ForeColor="#005190" 
+                                    Text="Contraseña" Font-Bold="True"></asp:Label>
                             </td>
-                            <td>
+                            <td bgcolor="White">
                                 <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password"></asp:TextBox>
                             </td>
+                            <td bgcolor="White">
+                                &nbsp;</td>
                         </tr>
                         <tr>
-                            <td>
+                            <td bgcolor="White">
                                 &nbsp;</td>
-                            <td>
-                                <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar" 
-                                    onclick="btnIniciarSesion_Click" CssClass="Boton" />
+                            <td bgcolor="White">
+                                <asp:Panel ID="PanelBotonIniciarSesion" runat="server" HorizontalAlign="Right">
+                                    <asp:Button ID="btnIniciarSesion" runat="server" CssClass="Boton" 
+                                        onclick="btnIniciarSesion_Click" Text="Iniciar" />
+                                </asp:Panel>
                             </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
+                            <td bgcolor="White">
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td>
-                                <asp:HyperLink ID="hlRegistrarPersona" runat="server" ForeColor="White" 
+                            <td colspan="2" bgcolor="White">
+                                &nbsp;</td>
+                            <td bgcolor="White">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="White">
+                                <asp:HyperLink ID="hlRegistrarPersona" runat="server" ForeColor="#005190" 
                                     NavigateUrl="~/AdultoMayor/frmRegistroAdultoMayor.aspx">Registrar persona</asp:HyperLink>
                             </td>
-                            <td>
-                                <asp:HyperLink ID="hlRegistrarEmpresa" runat="server" ForeColor="White" 
+                            <td bgcolor="White">
+                                <asp:HyperLink ID="hlRegistrarEmpresa" runat="server" ForeColor="#005190" 
                                     NavigateUrl="~/Empresa/frmRegistroEmpresa.aspx">Registrar empresa</asp:HyperLink>
                             </td>
+                            <td bgcolor="White">
+                                &nbsp;</td>
                         </tr>
                     </table>
                 </asp:Panel>

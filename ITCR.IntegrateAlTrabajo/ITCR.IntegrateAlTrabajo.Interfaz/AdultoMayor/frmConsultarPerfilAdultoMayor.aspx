@@ -319,7 +319,7 @@
                 &nbsp;</td>
             <td class="style6" colspan="5">
                 <asp:Panel ID="PanelEstudios" runat="server" BorderStyle="Solid" 
-                    BorderWidth="2px" Height="120px" ScrollBars="Auto">
+                    BorderWidth="2px" Height="200px" ScrollBars="Auto">
                     <table class="style9">
                         <tr>
                             <td class="style34">
@@ -341,10 +341,10 @@
                             <td class="style14" colspan="4">
                                 <asp:DataGrid ID="dgEstudios" runat="server" AutoGenerateColumns="False" 
                                     BackColor="WhiteSmoke" BorderStyle="Solid" CssClass="GridMantenimiento" 
-                                    Font-Names="Verdana" Font-Size="Smaller" ForeColor="Black" Height="19px" 
+                                    Font-Names="Century Gothic" Font-Size="Small" ForeColor="Black" Height="19px" 
                                     Width="99%">
                                     <AlternatingItemStyle BackColor="Gainsboro" />
-                                    <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                                    <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Century Gothic" 
                                         Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                     <Columns>
                                         <asp:BoundColumn DataField="Id_Estudio" HeaderText="Id_Estudio" Visible="False">
@@ -386,7 +386,7 @@
                 &nbsp;</td>
             <td class="style6" colspan="5">
                 <asp:Panel ID="PanelExperienciasLaborales" runat="server" BorderStyle="Solid" 
-                    BorderWidth="2px" Height="120px" ScrollBars="Auto">
+                    BorderWidth="2px" Height="200px" ScrollBars="Auto">
                     <table class="style9">
                         <tr>
                             <td class="style39">
@@ -412,10 +412,10 @@
                             <td class="style14" colspan="4">
                                 <asp:DataGrid ID="dgExperienciasLaborales" runat="server" 
                                     AutoGenerateColumns="False" BackColor="WhiteSmoke" BorderStyle="Solid" 
-                                    CssClass="GridMantenimiento" Font-Names="Verdana" Font-Size="Smaller" 
+                                    CssClass="GridMantenimiento" Font-Names="Century Gothic" Font-Size="Small" 
                                     ForeColor="Black" Height="19px" Width="99%">
                                     <AlternatingItemStyle BackColor="Gainsboro" />
-                                    <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                                    <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Century Gothic" 
                                         Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                     <Columns>
                                         <asp:BoundColumn DataField="Id_ExperienciaLaboral" 

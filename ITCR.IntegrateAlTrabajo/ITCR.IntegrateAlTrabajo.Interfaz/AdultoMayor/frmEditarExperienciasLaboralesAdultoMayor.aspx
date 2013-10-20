@@ -226,12 +226,12 @@
                                         BorderStyle="None" BorderWidth="2px" Height="250px" ScrollBars="Auto">
                                     <asp:DataGrid ID="dgExperienciasLaborales" runat="server" 
                                         AutoGenerateColumns="False" BackColor="WhiteSmoke" BorderStyle="Solid" 
-                                        CssClass="GridMantenimiento" Font-Names="Verdana" Font-Size="Smaller" 
+                                        CssClass="GridMantenimiento" Font-Names="Century Gothic" Font-Size="Small" 
                                         ForeColor="Black" Height="19px" 
                                         onitemcommand="dgExperienciasLaborales_ItemCommand" 
                                         onitemdatabound="dgExperienciasLaborales_ItemDataBound" Width="99%">
                                         <AlternatingItemStyle BackColor="Gainsboro" />
-                                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Century Gothic" 
                                             Font-Size="Larger" ForeColor="White" HorizontalAlign="Center" />
                                         <Columns>
                                             <asp:BoundColumn DataField="Id_ExperienciaLaboral" 

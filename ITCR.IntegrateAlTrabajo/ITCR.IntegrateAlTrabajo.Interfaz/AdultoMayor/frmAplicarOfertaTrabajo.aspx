@@ -187,8 +187,10 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style30">
-                                                    <asp:Button ID="btnAplicarOfertaTrabajo" runat="server" 
-                                                        onclick="btnAplicarOfertaTrabajo_Click" Text="Aplicar" />
+                                                    <asp:Panel ID="PanelBotonAplicar" runat="server" HorizontalAlign="Right">
+                                                        <asp:Button ID="btnAplicarOfertaTrabajo" runat="server" CssClass="Boton" 
+                                                            onclick="btnAplicarOfertaTrabajo_Click" Text="Aplicar" />
+                                                    </asp:Panel>
                                                 </td>
                                             </tr>
                                             <tr>

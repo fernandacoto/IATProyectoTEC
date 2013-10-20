@@ -76,12 +76,12 @@
     <Content Include="Empresa\frmPublicarOfertaTrabajo.aspx" />
     <Content Include="Empresa\frmRegistroEmpresa.aspx" />
     <Content Include="Multimedia\banner_adultos_mayores.jpg" />
-    <Content Include="Multimedia\banner_adultos_mayores.PNG" />
     <Content Include="Multimedia\banner_autenticacion.jpg" />
     <Content Include="Multimedia\icono-buscar.jpg" />
     <Content Include="Multimedia\icono-editar.jpg" />
     <Content Include="Multimedia\icono-eliminar.jpg" />
     <Content Include="Multimedia\Logo.PNG" />
+    <Content Include="Multimedia\RayaAutenticacion.PNG" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -348,7 +348,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>23793</DevelopmentServerPort>
+          <DevelopmentServerPort>10679</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

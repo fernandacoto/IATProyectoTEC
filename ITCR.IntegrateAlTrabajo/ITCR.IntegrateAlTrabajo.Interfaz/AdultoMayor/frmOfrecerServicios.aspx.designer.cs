@@ -265,6 +265,15 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.DropDownList drpHora6;
         
         /// <summary>
+        /// PanelBotonAgregar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelBotonAgregar;
+        
+        /// <summary>
         /// btnAgregarServicio control.
         /// </summary>
         /// <remarks>

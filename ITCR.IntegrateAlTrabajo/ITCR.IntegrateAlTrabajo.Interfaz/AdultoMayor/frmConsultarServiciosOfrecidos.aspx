@@ -115,14 +115,14 @@
                     <asp:DataGrid ID="dgServicios" runat="server" AutoGenerateColumns="False" 
                                             BackColor="WhiteSmoke" 
     BorderStyle="Solid" CssClass="GridMantenimiento" 
-                                            Font-Names="Verdana" Font-Size="Smaller" 
+                                            Font-Names="Century Gothic" Font-Size="Small" 
                         ForeColor="Black" Height="19px" 
                                             Width="100%" 
                         ondeletecommand="dgServicios_DeleteCommand" 
                         onitemcommand="dgServicios_ItemCommand" 
                         onitemdatabound="dgServicios_ItemDataBound">
                         <AlternatingItemStyle BackColor="Gainsboro" />
-                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Verdana" 
+                        <HeaderStyle BackColor="Navy" Font-Bold="True" Font-Names="Century Gothic" 
                                                 Font-Size="Larger" ForeColor="White" 
                             HorizontalAlign="Center" />
                         <Columns>
@@ -325,8 +325,10 @@
                                                 <td class="style29">
                                                     &nbsp;</td>
                                                 <td class="style11">
-                                                    <asp:Button ID="btnGuardarServicio" runat="server" 
-                                                        onclick="btnAgregarServicio_Click" Text="Guardar" />
+                                                    <asp:Panel ID="PanelBotonGuardar" runat="server" HorizontalAlign="Right">
+                                                        <asp:Button ID="btnGuardarServicio" runat="server" BorderStyle="None" 
+                                                            CssClass="Boton" onclick="btnAgregarServicio_Click" Text="Guardar" />
+                                                    </asp:Panel>
                                                 </td>
                                             </tr>
                                         </table>
