@@ -170,6 +170,8 @@
                 &nbsp;</td>
             <td class="style6">
                 <asp:Panel ID="PanelBotonBuscar" runat="server" HorizontalAlign="Right">
+                    <asp:Button ID="btn_buscar" runat="server" Text="Buscar" CssClass="Boton" 
+                        onclick="btn_buscar_Click" />
                 </asp:Panel>
             </td>
             <td class="style4">

@@ -118,7 +118,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
                 Usuario.Contrasenna = txtContraseña.Text;
                 Usuario.Indicio_Contrasenna = txtIndicioContraseña.Text;
                 Usuario.FK_IdTipoUsuario = 2;
-                Usuario.Estado = 2;
+                Usuario.Estado = 1;
                 if (TablaNomUsuario.Rows.Count.Equals(0))
                 {
                     if (txtContraseña.Text.CompareTo(txtConfirmarContraseña.Text) == 0)

@@ -37,7 +37,9 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         {
             if (!IsPostBack)
             {
-
+                ListaEstudios.Clear();
+                ListaExperienciasLaborales.Clear();
+                ListaIdiomas.Clear();
                 mvRegistroAdultoMayor.ActiveViewIndex = 0;
                 btnFinalizar.Enabled = false;
                 cargarTodosDropDownList();
@@ -141,7 +143,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
                     Usuario.Nom_Usuario = txtNombreUsuario.Text;
                     Usuario.Contrasenna = txtContraseña.Text;
                     Usuario.Indicio_Contrasenna = txtIndicioContraseña.Text;
-                    Usuario.Estado = 2;
+                    Usuario.Estado = 1; //CAMBIAR
                     Usuario.FK_IdTipoUsuario = 1;
                     mvRegistroAdultoMayor.ActiveViewIndex = 2;
                 }

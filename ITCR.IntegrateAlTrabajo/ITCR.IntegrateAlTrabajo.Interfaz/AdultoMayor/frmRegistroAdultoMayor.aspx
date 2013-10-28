@@ -493,20 +493,15 @@
                                     &nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="style24">
-                                    &nbsp;</td>
-                                <td class="style35">
-                                    &nbsp;</td>
-                                <td class="style17" colspan="3">
+                                <td class="style24" colspan="5">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Panel ID="Panel3" runat="server" HorizontalAlign="Right">
                                         <asp:Button ID="btnAtras" runat="server" CssClass="Boton" 
                                             onclick="btnAtras_Click" Text="Atrás" />
-                                        &nbsp;&nbsp;&nbsp;
+                                        &nbsp;
                                         <asp:Button ID="btnCancelar2" runat="server" CssClass="Boton" Text="Cancelar" />
-                                        &nbsp;&nbsp;&nbsp;
-                                        <asp:Button ID="btnSiguiente2" runat="server" CssClass="Boton" 
+                                        &nbsp;&nbsp;&nbsp;<asp:Button ID="btnSiguiente2" runat="server" CssClass="Boton" 
                                             onclick="btnSiguiente2_Click" Text="Siguiente" />
-                                    </asp:Panel>
+                                        &nbsp;</asp:Panel>
                                     &nbsp;&nbsp;&nbsp;&nbsp;</td>
                             </tr>
                         </table>

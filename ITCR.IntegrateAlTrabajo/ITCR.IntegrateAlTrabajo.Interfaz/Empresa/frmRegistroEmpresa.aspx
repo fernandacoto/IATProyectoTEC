@@ -50,7 +50,6 @@
         }
         .style19
         {
-            width: 120px;
             height: 25px;
         }
         .style21
@@ -292,13 +291,11 @@
                                     &nbsp;</td>
                                 <td class="style14">
                                     &nbsp;</td>
-                                <td class="style19">
-                                    &nbsp;</td>
-                                <td class="style9">
-                                    <asp:Button ID="btnCancelarPaso1" runat="server" Text="Cancelar" 
-                                        onclick="btnCancelarPaso1_Click" />
+                                <td class="style19" colspan="2">
+                                    <asp:Button ID="btnCancelarPaso1" runat="server" CssClass="Boton" 
+                                        onclick="btnCancelarPaso1_Click" Text="Cancelar" />
                                     &nbsp;
-                                    <asp:Button ID="btnSiguientePaso1" runat="server" 
+                                    <asp:Button ID="btnSiguientePaso1" runat="server" CssClass="Boton" 
                                         onclick="btnSiguientePaso1_Click" Text="Siguiente" />
                                 </td>
                             </tr>
@@ -396,10 +393,10 @@
                                     &nbsp;</td>
                                 <td class="style9">
                                     <asp:Button ID="btnCancelarPaso2" runat="server" Text="Cancelar" 
-                                        onclick="btnCancelarPaso2_Click" />
+                                        onclick="btnCancelarPaso2_Click" CssClass="Boton" />
                                     &nbsp;
                                     <asp:Button ID="btnSiguientePaso2" runat="server" 
-                                        onclick="btnSiguientePaso2_Click" Text="Siguiente" />
+                                        onclick="btnSiguientePaso2_Click" Text="Siguiente" CssClass="Boton" />
                                 </td>
                             </tr>
                         </table>
@@ -475,10 +472,10 @@
                                     &nbsp;</td>
                                 <td class="style9">
                                     <asp:Button ID="btnCancelarPaso3" runat="server" Text="Cancelar" 
-                                        onclick="btnCancelarPaso3_Click" />
+                                        onclick="btnCancelarPaso3_Click" CssClass="Boton" />
                                     &nbsp;
                                     <asp:Button ID="btnFinalizar" runat="server" onclick="btnFinalizar_Click" 
-                                        Text="Finalizar" Enabled="False" style="height: 26px" />
+                                        Text="Finalizar" Enabled="False" style="height: 26px" CssClass="Boton" />
                                 </td>
                             </tr>
                         </table>

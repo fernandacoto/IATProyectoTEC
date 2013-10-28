@@ -327,7 +327,7 @@
                                                 <td class="style11">
                                                     <asp:Panel ID="PanelBotonGuardar" runat="server" HorizontalAlign="Right">
                                                         <asp:Button ID="btnGuardarServicio" runat="server" BorderStyle="None" 
-                                                            CssClass="Boton" onclick="btnAgregarServicio_Click" Text="Guardar" />
+                                                            CssClass="Boton" onclick="btnGuardarServicio_Click" Text="Guardar" />
                                                     </asp:Panel>
                                                 </td>
                                             </tr>
